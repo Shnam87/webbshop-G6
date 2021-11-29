@@ -1,1 +1,1 @@
-# webbshop-G6
+# Grupp projektet "Webbshop"
