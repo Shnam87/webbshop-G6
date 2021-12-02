@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node-sass sass/main.scss css/main.css -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,6 @@
   "homepage": "https://github.com/Shnam87/webbshop-G6#readme",
   "dependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "keywords": []
 }
