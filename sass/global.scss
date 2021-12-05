@@ -85,3 +85,27 @@ body {
     color: white;
 }
 
+
+/*---------------FOOTER-------------------*/
+
+.footer{
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(241, 237, 233);
+    margin-top: 10px;
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.copyright-div{
+    text-align: center;
+}
+
+.mediaIcon{
+    height: 30px;
+    margin: 5px;
+}
