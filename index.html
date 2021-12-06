@@ -6,20 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./javascript/main.js" defer></script>
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
     <header>
         <div class="header">
-            <div class="header-text">
-                 <h2> Candle store </h2>
-                 <img class="logo" src="/images/candleLogo.jpg" alt="">
-            </div>
+            <div class="dropdown-menu">
+                <button class="menu-button">
+                    <div class="link"></div>
+                    <div class="link"></div>
+                    <div class="link"></div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#hem">Hem</a>
+                    <a href="#produkter">Produkter</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+               </div>
+               <div class="header-text">
+                <h2> Candle store </h2>
+                <img class="logo" src="./images/candleLogo.jpg" alt="">
+           </div>
                 <a class="topLink">Hem</a>
                 <a class="topLink">Produkter</a>
                 <a class="topLink">Kontakt</a>
                 <a class="topLink">Admin</a>
-            </div>
+                <div class="cart-container">
+                    <img class="cart" src="./images/cart.jpg">
+                </div>
         </div>
     </header>
 <main>
@@ -41,6 +55,7 @@
         </div>
     </div>
 </div>
+
 </main>
 </body>
 </html>
