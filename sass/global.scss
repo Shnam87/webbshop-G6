@@ -42,7 +42,7 @@ body {
     position: relative;
     width: 100%;
     height: 400px;
-    background-image: url(/images/candleFlower.jpg);
+    background-image: url($bgImage);
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
@@ -67,13 +67,13 @@ body {
 }
 
 .left {
-    background-image: url(/images/bulb.jpg);
+    background-image: url($leftImage);
     background-size: cover;
     background-position: center;
 }
 
 .right {
-    background-image: url(/images/candleHand.jpg);
+    background-image: url($rightImage);
     background-size: cover;
     background-position: center;
 }
