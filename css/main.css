@@ -82,9 +82,7 @@ body {
   display: block; }
 
 .topLink {
-  margin: 15px;
-  text-decoration: none;
-  color: black; }
+  margin: 15px; }
 
 .topLink:hover {
   color: #8f8c8c;
