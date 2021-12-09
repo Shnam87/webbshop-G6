@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,100&family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  padding: 0;
+  margin: 0;}
 
 body {
-  margin: 0px; }
+  font-family: "Quicksand", sans-serif; }
 
 :root {
   --white-light: rgba 255, 255, 255, 0, 5;
@@ -14,11 +16,6 @@ body {
   --antique-brass: #c69c80;
   --cafe-au-lait: #b88665;
   --gray: #ededed; }
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
 
 .header {
   position: relative;
@@ -101,12 +98,6 @@ body {
   text-decoration: none;
   color: black; 
   left: 5px; }
-
-.logo {
-  height: 3em; }
-
-.topLink {
-  margin: 15px; }
 
 .topLink:hover {
   color: #8f8c8c;
@@ -234,13 +225,9 @@ main {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; }
-body {
-  font-family: "Quicksand", sans-serif; }
 
-img {
-  width: 100%;
-  display: block; }
 
+/*---------------PRODUCT PAGE START---------------*/
 .products-container {
   width: 88vw;
   margin: 0 auto; }
@@ -277,7 +264,6 @@ img {
   opacity: 0.5;
   margin: auto; }
 
-/* Product section */
 .products {
   background-color: var(--linen);
   padding: 3.2rem 0; }
@@ -396,3 +382,5 @@ img {
   .product-items {
     display: grid;
     grid-template-columns: repeat(3, 1fr); } }
+
+/*---------------PRODUCT PAGE END---------------*/
