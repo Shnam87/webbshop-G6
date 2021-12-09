@@ -9,7 +9,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  height: 60px;
+  height: 7vw;
   color: #050505;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,9 @@ body {
   display: block; }
 
 .topLink {
-  margin: 15px; }
+  margin: 15px;
+  text-decoration: none;
+  color: black; }
 
 .topLink:hover {
   color: #8f8c8c;
@@ -95,8 +97,11 @@ body {
   right: 5px;
   justify-content: center; }
 
-.cart {
+.icons {
   height: 4vw; }
+
+.cart-button:hover {
+  cursor: pointer; }
 
 .hero-container {
   position: relative;
@@ -137,3 +142,21 @@ body {
   top: 30%;
   left: 8%;
   color: white; }
+
+h2 {
+  text-align: center; }
+
+main {
+  background-color: #f3f3f3; }
+
+.cart-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5vw; }
+
+.cart-box {
+  width: 60vw;
+  height: 30vw;
+  background-color: white; }
