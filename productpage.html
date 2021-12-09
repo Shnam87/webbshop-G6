@@ -17,19 +17,37 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Roboto:ital,wght@0,400;0,500;1,500;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--Header börjar-->
     <header>
         <div class="header">
-            <div class="header-text">
-                 <h2> Candle store </h2>
-                 <img class="logo" src="/images/candleLogo.jpg" alt="">
-            </div>
+            <div class="dropdown-menu">
+                <button class="menu-button">
+                    <div class="link"></div>
+                    <div class="link"></div>
+                    <div class="link"></div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#hem">Hem</a>
+                    <a href="#produkter">Produkter</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+               </div>
+               <div class="header-text">
+                <h2> Candle store </h2>
+                <img class="logo" src="./images/candleLogo.jpg" alt="">
+           </div>
                 <a class="topLink">Hem</a>
                 <a class="topLink">Produkter</a>
                 <a class="topLink">Kontakt</a>
                 <a class="topLink">Admin</a>
-            </div>
+                <div class="cart-container">
+                <a href="/wishlist.html"><img class="icons" src="/images/heartIcon.jpg"></a>
+                <a href="/varukorg.html"><img class="icons" src="./images/cart.jpg"></a>
+                </div>
         </div>
     </header>
+    <!--Header slut-->
+    <!--Product page börjar-->
     <main>
         <div class="products">
             <div class="products-container">
@@ -264,6 +282,21 @@
                 </div>
             </div>
         </div>
+        <!--Product page slutar-->
+        <!--Footer börjar-->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="socialMedia-container">
+                    <p>Följ oss på sociala medier:</p>
+                    <a href="https://www.instagram.com/studioanahita.se/"><img class="mediaIcon" src="./css/images/instagram_icon.png" alt="instagram"></a>
+                    <a href="https://sv-se.facebook.com/medieinstitutet/"><img class="mediaIcon" src="./css/images/facebook_icon_black.png" alt="facebook"></a>
+                </div>
+                <div class="copyright-div">
+                    <p class= "copyright-text">&copy; 2021 Grupp 6</p>
+                </div>
+            </div>   
+        </footer>
+        <!--Footer slutar-->
     </main>
 </body>
 </html>

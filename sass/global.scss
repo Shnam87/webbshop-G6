@@ -12,11 +12,7 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-<<<<<<< HEAD
-    height: 7vw;
-=======
     height: 60px;
->>>>>>> product-page
     color: rgb(5, 5, 5);
     justify-content: center;
     align-items: center;
@@ -28,7 +24,6 @@ body {
     align-items: center;
     position: absolute;
     left: 5px;
-<<<<<<< HEAD
     justify-content: center;
 }
 .header-text h2 {
@@ -111,7 +106,6 @@ body {
    margin: 15px;
    text-decoration: none;
    color: black;
-=======
 }
 
 .logo {
@@ -120,14 +114,12 @@ body {
 
 .topLink {
    margin: 15px;
->>>>>>> product-page
 }
 
 .topLink:hover {
     color: rgb(143, 140, 140);
     cursor: pointer;
 }
-<<<<<<< HEAD
 
 .cart-container {
     display: flex;
@@ -146,17 +138,11 @@ body {
     cursor: pointer;
 }
 
-=======
->>>>>>> product-page
 .hero-container {
     position: relative;
     width: 100%;
     height: 400px;
-<<<<<<< HEAD
-    background-image: url($bgImage);
-=======
     background-image: url(/images/candleFlower.jpg);
->>>>>>> product-page
     background-size: cover;
     font-family: 'Open Sans', sans-serif;
 }
@@ -181,21 +167,13 @@ body {
 }
 
 .left {
-<<<<<<< HEAD
-    background-image: url($leftImage);
-=======
     background-image: url(/images/bulb.jpg);
->>>>>>> product-page
     background-size: cover;
     background-position: center;
 }
 
 .right {
-<<<<<<< HEAD
-    background-image: url($rightImage);
-=======
     background-image: url(/images/candleHand.jpg);
->>>>>>> product-page
     background-size: cover;
     background-position: center;
 }
@@ -207,7 +185,6 @@ body {
     color: white;
 }
 
-<<<<<<< HEAD
 
 /*---------------FOOTER-------------------*/
 
@@ -262,5 +239,3 @@ main {
 
 
 
-=======
->>>>>>> product-page
