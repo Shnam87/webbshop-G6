@@ -9,8 +9,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  height: 7vw;
-  height: 60px;
+  height: 8vw;
   color: #050505;
   justify-content: center;
   align-items: center;
@@ -83,14 +82,6 @@ body {
   display: block; }
 
 .topLink {
-  margin: 15px;
-  text-decoration: none;
-  color: black; }
-
-.logo {
-  height: 3em; }
-
-.topLink {
   margin: 15px; }
 
 .topLink:hover {
@@ -113,11 +104,17 @@ body {
 .hero-container {
   position: relative;
   width: 100%;
-  height: 400px;
-  background-image: url("./images/candleFlower.jpg");
-  background-image: url(/images/candleFlower.jpg);
-  background-size: cover;
+  height: 600px;
   font-family: 'Open Sans', sans-serif; }
+
+.image-container {
+  height: 100%;
+  width: 100%; }
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
 
 .hero-text {
   position: absolute;
@@ -136,13 +133,11 @@ body {
   margin-top: 10px; }
 
 .left {
-  background-image: url("./images/bulb.jpg");
   background-image: url(/images/bulb.jpg);
   background-size: cover;
   background-position: center; }
 
 .right {
-  background-image: url("./images/candleHand.jpg");
   background-image: url(/images/candleHand.jpg);
   background-size: cover;
   background-position: center; }
@@ -225,38 +220,8 @@ main {
   margin: 0;
   box-sizing: border-box; }
 
-.header {
-  position: relative;
-  display: flex;
-  width: 100%;
-  height: 60px;
-  color: #050505;
-  justify-content: center;
-  align-items: center;
-  font-family: "Open Sans", sans-serif; }
-
-.header-text {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 5px; }
-
-.logo {
-  height: 3em; }
-
-.topLink {
-  margin: 15px; }
-
-.topLink:hover {
-  color: #8f8c8c;
-  cursor: pointer; }
-
 body {
   font-family: "Quicksand", sans-serif; }
-
-img {
-  width: 100%;
-  display: block; }
 
 .products-container {
   width: 88vw;
