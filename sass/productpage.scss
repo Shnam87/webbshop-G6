@@ -114,7 +114,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 150px;
 }
 
 .btn-wish {
@@ -207,6 +207,11 @@ img {
   .product-items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-btns{
+    display: flex;
+    width: 300px;
   }
 }
 
