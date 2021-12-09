@@ -18,12 +18,8 @@
   },
   "homepage": "https://github.com/Shnam87/webbshop-G6#readme",
   "dependencies": {
-<<<<<<< HEAD
-    "node-sass": "^6.0.1"
-=======
     "node-sass": "^6.0.1",
     "scss": "^0.2.4"
->>>>>>> product-page
   },
   "keywords": []
 }
