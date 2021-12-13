@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./javascript/contactpage.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="dropdown-menu">
+                <button class="menu-button">
+                    <div class="link"></div>
+                    <div class="link"></div>
+                    <div class="link"></div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#hem">Hem</a>
+                    <a href="./productpage.html">Produkter</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div class="header-text">
+                 <h2> Candle store </h2>
+                 <img class="logo" src="./images/candleLogo.jpg" alt="">
+            </div>
+                <a class="topLink" href="./index.html">Hem</a>
+                <a class="topLink" href="./productpage.html">Produkter</a>
+                <a class="topLink" href="./">Kontakt</a>
+                <a class="topLink">Admin</a>
+            <div class="cart-container">
+                <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
+                <a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a>
+            </div>
+        </div>
+    </header>
+    <main class="contactPage">
+        <div class="contactPageContainer">
+            <section class="aboutContainer">
+                <h2 class="contact-h2">OM CANDLE STORE – NJUT AV DE SMÅ LJUSGLIMTARNA</h2>
+                <p>Candle store är en webshop som grundades av Venus Melody Lashgari. Vårt fokus har alltid varit att ta fram ljus med toppkvalité till väldigt bra priser för vi tycker inte man ska behöva betala för mycket för att få ett fint och väldoftande hem med doftljus. Vi brinner för att leverera miljövänlig belysning till hela hemmet, så att du kan njuta av de små ljusglimtarna i vardagen. Vår intention är att skapa ett trevligt och miljövänligt inomhusklimat.</p>
+            </section>
+            <section class="contactSection">
+                <div class="formContainer">
+                    <h2 id= "contactForm-h2" class="contact-h2">KONTAKTFORMULÄR</h2>
+                    <form action="/action_page.php" role="form" autocomplete="off">
+                        <label for="name">Namn:</label>
+                        <input class="input" id="nameInputField" type="text" name="name" placeholder="Namn...">
+                        <label for="Ämne">Välj ämne:</label>
+                        <select class="input" id="topicField" name="Ämne">
+                            <option value="choose">Välj</option>
+                            <option value="Retur">Retur</option>
+                            <option value="Betalning">Betalning</option>
+                            <option value="Reklamation">Reklamation</option>
+                            <option value="Övrigt">Övrigt</option>
+                        </select>
+                        <label for="email">Email:</label>
+                        <input class="input" id="emailInputField" type="email" name="email" placeholder="email@exempel.com">
+                        <label for="meddelande">Meddelande:</label>
+                        <input class="input" id="massageInputfield" type="text" name="meddelande" placeholder="text...">
+                        <input class="inputSubmit" type="submit" value="Skicka">
+                        <p class="submitted"></p>
+                    </form>
+                </div>
+                <div class="contactContainer">
+                    <div class="contactDiv">
+                        <h2 class="contact-h2">KONTAKTA OSS</h2>
+                        <P class="contact-Text">Vi gör alltid vårt bästa för att hjälpa dig!</p>
+                        <p class="contact-Text">Vår kundservice finns alltid till hands för att svara på frågor om dina onlineköp, produktinformation, hjälp med att handla eller information om returer och byten. Du är välkommen att ringa eller skicka mail genom att fylla i vårt kontaktformulär.</P>
+                        <p class="contact-Text">Tel. 020 - 08 08 08</p>
+                        <H3 class="contact-h3">ÖPPETIDER</H3>    
+                        <p>Måndag–fredag 9–16</p> 
+                        <p>Lördag & Söndag stängt</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="socialMedia-container">
+                <p>Följ oss på sociala medier:</p>
+                <a href="https://www.instagram.com/studioanahita.se/"><img class="mediaIcon" src="./css/images/instagram_icon.png" alt="instagram"></a>
+                <a href="https://sv-se.facebook.com/medieinstitutet/"><img class="mediaIcon" src="./css/images/facebook_icon_black.png" alt="facebook"></a>
+            </div>
+            <div class="copyright-div">
+                <p class= "copyright-text">&copy; 2021 Grupp 6</p>
+            </div>
+        </div>   
+    </footer>
+</body>
+</html>

@@ -2,11 +2,10 @@
 
 * {
     box-sizing: border-box;
-  }
-
-body {
     margin: 0px;
+  
 }
+
 
 .header {
     position: relative;
@@ -186,7 +185,6 @@ display: block;
 .footer{
     position: relative;
     font-family: 'Open Sans', sans-serif;
-    background-color: rgb(241, 237, 233);
     margin-top: 10px;
 }
 
@@ -210,14 +208,11 @@ display: block;
 // varukorg
 
 
-h2 {
-   text-align: center;
-}
 
 
 
 main {
-    background-color: rgb(243, 243, 243);
+    background-color: $mainColor-linen;
 }
 
 .cart-flex {

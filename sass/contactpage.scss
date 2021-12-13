@@ -1,0 +1,145 @@
+
+/*---------------------Contact page----------------------*/
+
+.contactPage{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vw;
+    color: $mainTextColor;
+}
+
+.contactPageContainer{
+    max-width: 1100px;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+
+.contact-h3,
+.contact-h2, 
+.contact-Text {
+    padding-bottom: 2rem;
+}
+
+
+
+.aboutContainer{
+    width: 100%;
+    margin: auto;
+    font-family: $main-text;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: $main-text;
+    gap: 4vw;
+}
+
+.formContainer{
+    font-family: $main-text;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 5px;
+    margin-top: 15%;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input:invalid{
+    border: 3px solid red;
+}
+
+.inputSubmit:hover {
+  background-color: #817f76;
+}
+
+.inputSubmit {
+  width: 100%;
+  background-color: rgb(143, 140, 140);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contactForm-h2{
+    text-align: center;
+}
+
+.submitted{
+    padding: 12px 20px;
+    margin: 8px 0;
+    color: red;
+}
+
+#massageInputfield{
+  height: 200px;
+}
+
+.contactContainer{
+    width: 100%;
+    text-align: left;
+}
+
+
+
+
+/*-----------------------MEDIA QUERIES--------------------------------*/
+
+@media screen and (min-width: 600px) {
+
+    .contactPage{
+        background-color: $mainColor-linen;
+        padding-bottom: 30px;
+    }
+    .contactPageContainer{
+        max-width: 1100px;
+        width: 80vw;
+        background-color: white;
+        padding: 30px;
+    }
+    
+    .aboutContainer{
+        width: 70%;
+        padding-bottom: 10%;
+        padding-top: 10%;
+    }
+
+    .contactSection{
+        flex-direction: row; 
+        width: 100%; 
+        margin: auto;
+    }
+
+    .contactContainer{
+        padding: 20px;
+    }
+
+    .formContainer{
+        max-width: 450px;
+        margin: auto;
+        padding: 20px;
+      }
+
+    
+
+}
