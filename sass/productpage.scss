@@ -1,13 +1,4 @@
-:root {
-  --white-light: rgba 255, 255, 255, 0, 5;
-  --linen: #f3eae2;
-  --almond: #f0e0d1;
-  --desert-sand: #e7ccb1;
-  --tan: #c7ab94;
-  --antique-brass: #c69c80;
-  --cafe-au-lait: #b88665;
-  --gray: #ededed;
-}
+
 * {
   padding: 0;
   margin: 0;
@@ -33,7 +24,7 @@ body {
   font-weight: 500;
   text-align: center;
   padding: 1.3rem 0;
-  opacity: 0.5;
+  color: $text;
 }
 .md-title {
   font-size: 2rem;
@@ -50,13 +41,13 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
-  opacity: 0.5;
+  color: $text;
   margin: auto;
 }
 
 /* Product section */
 .products {
-  background-color: var(--linen);
+  background-color: $linen;
   padding: 3.2rem 0;
 }
 
@@ -67,7 +58,7 @@ body {
   width: 300px;
 }
 .products-content {
-  background: var(--desert-sand);
+  background: $sand;
   padding: 3rem 0.5rem 2rem 0.5rem;
   cursor: pointer;
 }
@@ -93,7 +84,6 @@ body {
   cursor: pointer;
   border: none;
   transition: all 0.6s ease;
-  border: 1px solid violet;
 } 
 .btn-wish {
   padding: 0.8rem 0;
@@ -111,7 +101,7 @@ body {
 .btn-cart,
 .btn-buy,
 .btn-load {
-  background: var(--tan);
+  background: $tan;
   color: white;
 }
 .btn-cart:hover,
@@ -145,7 +135,7 @@ body {
   align-items: center;
 }
 .product-name {
-  color: var(--cafe-au-lait);
+  color: $cafe;
   display: block;
   text-decoration: none;
   font-size: 1rem;
@@ -160,12 +150,12 @@ body {
 }
 .product-price:first-of-type {
   text-decoration: line-through;
-  color: var(--cafe-au-lait);
+  color: $cafe;
   font-size: 0.95rem;
 }
 
 .off-info .sm-title {
-  background: var(--tan);
+  background: $tan;
   color: white;
   display: inline-block;
   padding: 0.5rem;
