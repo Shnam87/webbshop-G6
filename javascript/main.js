@@ -1,5 +1,5 @@
 /*---------------------------Unsplash API Image-------------------------------------------------*/
-
+/*
 const numImagesAvailable = 258  //Photos in collection
 const numItemsToGenerate = 1; 
 const collectionID = 460091  //Collection ID
@@ -17,4 +17,6 @@ for(let i=0; i < numItemsToGenerate; i++){
     let randomImageIndex = Math.floor(Math.random() * numImagesAvailable);
     renderGalleryItem(randomImageIndex);
 }
+
+*/
 
