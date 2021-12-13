@@ -8,14 +8,16 @@ function checkLogin(e) {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "admin" && password === "webbshopg6") {
-        location.href = 'nextPage.html'
+    if (username === "admin" && password === "Grupp6") {
+        location.href = 'admin.html'
     } else {
         alert("Invalid Username or Password")
     }
 }
 
-function openModal() {
+function openModal(e) {
+    e.preventDefault();
+    
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
 }

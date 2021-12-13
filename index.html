@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./javascript/main.js" defer></script>
     <script src="./javascript/login.js" defer></script>
+    <script src="./javascript/main.js" defer></script>
     <script src="./javascript/varukorg.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -23,7 +23,6 @@
                     <a href="#hem">Hem</a>
                     <a href="./productpage.html">Produkter</a>
                     <a href="#kontakt">Kontakt</a>
-                    <a href="" id="login">Admin</a>
                 </div>
             </div>
             <div class="header-text">
@@ -37,6 +36,16 @@
             <div class="cart-container">
                 <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
                 <a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a>
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h1 id="login-header">Login</h1>
+                <form id="login-form">
+                    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                    <input type="submit" value="Login" id="login-form-submit">
+                </form>
             </div>
         </div>
     </header>
