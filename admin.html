@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="./javascript/login.js" defer></script>
-    <script src="./javascript/main.js" defer></script>
-    <script src="./javascript/varukorg.js" defer></script>
+    <title>Candle store - Admin page</title>
+    <script src="./javascript/admin.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -31,45 +29,36 @@
             </div>
                 <a class="topLink" href="./index.html">Hem</a>
                 <a class="topLink" href="./productpage.html">Produkter</a>
-                <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink" href="" id="login">Admin</a>
+                <a class="topLink">Kontakt</a>
             <div class="cart-container">
                 <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
                 <a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a>
             </div>
         </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <h1 id="login-header">Login</h1>
-                <form id="login-form">
-                    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-                    <input type="submit" value="Login" id="login-form-submit">
-                </form>
-            </div>
-        </div>
     </header>
+
     <main>
-        <div class="hero-container">
-            <div class="hero-text">
-                <h1>Julkampanj</h1>
-                <h4>Upp till 30% rabatt</h4>
-            </div>
-            <div class="image-container"></div>
-        </div>
-        <div class="card-container">
-            <div class="startCard left">
-                <div class="card-text">
-                    <h4>Handmade candles</h4>
-                </div>
-            </div>
-            <div class="startCard right">
-                <div class="card-text">
-                    <h4>Cozy lights</h4>
-                </div>
-            </div>
+        <div>
+            <h1>Fyll i uppgifter och bild om föremålet:</h1>
+            <form action="">
+            <br><br>
+            <label for="objName">Produktens Namn: </label>
+            <input type="text" name="" id="objName" placeholder="Vad vill du lägga till?" required>
+            <br><br>
+            <label for="objImg">Produktens Bild: </label>
+            <input type="file" accept="image/*" name="" id="objImg">
+            <br><br>
+            <label for="objPrice">Produktens Pris: </label>
+            <input type="number" min="1" name="" id="objPrice" placeholder="Priset ?" >
+            <br><br>
+            <label for="objDescription">Produktens Beskrivning: </label> <br>
+            <textarea name="" id="objDescription" cols="35" rows="4" placeholder="Kort beskrivning"></textarea>
+            <br><br>
+            <button id="save">Lägg till ny föremål</button>
+            </form>
         </div>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="socialMedia-container">
