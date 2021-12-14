@@ -29,7 +29,7 @@
             </div>
                 <a class="topLink" href="./index.html">Hem</a>
                 <a class="topLink" href="./productpage.html">Produkter</a>
-                <a class="topLink" href="./">Kontakt</a>
+                <a class="topLink" href="./contactpage.html">Kontakt</a>
                 <a class="topLink">Admin</a>
             <div class="cart-container">
                 <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
@@ -46,9 +46,9 @@
             <section class="contactSection">
                 <div class="formContainer">
                     <h2 id= "contactForm-h2" class="contact-h2">KONTAKTFORMULÄR</h2>
-                    <form action="/action_page.php" role="form" autocomplete="off">
+                    <form action="https://formspree.io/f/meqnqlzp" method="POST">
                         <label for="name">Namn:</label>
-                        <input class="input" id="nameInputField" type="text" name="name" placeholder="Namn...">
+                        <input class="input" id="nameInputField" type="text" name="Namn" placeholder="Namn..." required>
                         <label for="Ämne">Välj ämne:</label>
                         <select class="input" id="topicField" name="Ämne">
                             <option value="choose">Välj</option>
@@ -58,9 +58,10 @@
                             <option value="Övrigt">Övrigt</option>
                         </select>
                         <label for="email">Email:</label>
-                        <input class="input" id="emailInputField" type="email" name="email" placeholder="email@exempel.com">
+                        <input class="input" id="emailInputField" type="email" name="Email" placeholder="email@exempel.com" required>
                         <label for="meddelande">Meddelande:</label>
-                        <input class="input" id="massageInputfield" type="text" name="meddelande" placeholder="text...">
+                        <textarea class="input textarea" id="massageInputfield" type="text" name="Meddelande" placeholder="text..." cols="30"
+                        rows="10" required></textarea>
                         <input class="inputSubmit" type="submit" value="Skicka">
                         <p class="submitted"></p>
                     </form>

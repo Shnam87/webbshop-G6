@@ -5,7 +5,20 @@ const message = document.querySelector("#massageInputfield");
 const submit = document.querySelector(".inputSubmit");
 const submitted = document.querySelector(".submitted");
 
+
+
+window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+
+
+/*
 const contactList = JSON.parse ( localStorage.getItem ("contactList")) || [];
+
+
+
 
 const addContact=(e)=>{
   e.preventDefault();
@@ -33,4 +46,4 @@ const addContact=(e)=>{
 }
 
 submit.addEventListener("click", addContact);
-
+*/
