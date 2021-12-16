@@ -431,8 +431,11 @@ body {
   border-radius: 4px;
   box-sizing: border-box; }
 
+.textarea {
+  font-family: "Open Sans", sans-serif; }
+
 .input:invalid {
-  border: 3px solid red; }
+  background-color: #e0dfdf; }
 
 .inputSubmit:hover {
   background-color: #817f76; }
