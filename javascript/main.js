@@ -18,7 +18,7 @@ for(let i=0; i < numItemsToGenerate; i++){
     renderGalleryItem(randomImageIndex);
 }
 
-// Show & Hide pictures
+/*---------------------------Show & Hide pictures-------------------------------------------------*/
 
 $(".product").slice(0, 3).show();
 $(".btn-load").on("click", function(){

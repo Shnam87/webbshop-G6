@@ -14,11 +14,13 @@ body {
 }
 .lg-title,
 .md-title,
-.sm-title {
+.sm-title
+ {
   font-family: Georgia, "Times New Roman", Times, serif;
   padding: 0.6rem 0;
   text-transform: capitalize;
 }
+
 .lg-title {
   font-size: 2.5rem;
   font-weight: 500;
@@ -30,11 +32,12 @@ body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
-.sm-title {
-  font-weight: 300;
+.product-info-top .sm-title {
+  font-weight: 100;
   font-size: 1rem;
-  text-transform: uppercase;
-}
+  color: $text;
+  padding: 0.6rem 0;}
+
 .text-light {
   text-align: center;
   width: 70%;
@@ -167,6 +170,9 @@ body {
   z-index: 1;
   letter-spacing: 3px;
   cursor: default;
+  text-transform: capitalize;
+  font-weight: 200;
+  font-size: 1.2rem;
 }
 
 /* Media Queries */

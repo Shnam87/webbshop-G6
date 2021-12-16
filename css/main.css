@@ -229,10 +229,11 @@ body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif; }
 
-.sm-title {
-  font-weight: 300;
+.product-info-top .sm-title {
+  font-weight: 100;
   font-size: 1rem;
-  text-transform: uppercase; }
+  color: #747474;
+  padding: 0.6rem 0; }
 
 .text-light {
   text-align: center;
@@ -363,7 +364,10 @@ body {
   transform: rotate(180deg);
   z-index: 1;
   letter-spacing: 3px;
-  cursor: default; }
+  cursor: default;
+  text-transform: capitalize;
+  font-weight: 200;
+  font-size: 1.2rem; }
 
 /* Media Queries */
 @media screen and (min-width: 748px) {
