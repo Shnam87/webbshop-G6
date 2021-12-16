@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produkter - Studio Anahita</title>
+    <!--------JQUERY-------->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
     <!---------JS--------->
+    <script src="js/jquery-latest.min.js"></script>
     <script src="./javascript/main.js" defer></script>
     <!---------CSS--------->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/main.css" />
     <!---------FontAwesome--------->
-    <script src="https://kit.fontawesome.com/ad2a113bb4.js" crossorigin="anonymous"></script>
-<!---------Google Fonts--------->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Roboto:ital,wght@0,400;0,500;1,500;1,900&display=swap" rel="stylesheet">
-</head>
+    <script
+      src="https://kit.fontawesome.com/ad2a113bb4.js"
+      crossorigin="anonymous"
+    ></script>
+    <!---------Google Fonts--------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&family=Roboto:ital,wght@0,400;0,500;1,500;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 <body>
     <!--Header börjar-->
     <header>
         <div class="header">
-            <div class="dropdown-menu">
-                <button class="menu-button">
-                    <div class="link"></div>
-                    <div class="link"></div>
-                    <div class="link"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#hem">Hem</a>
-                    <a href="./productpage.html">Produkter</a>
-                    <a href="#kontakt">Kontakt</a>
-                </div>
-            </div>
-            <div class="header-text">
-                 <h2> Candle store </h2>
-                 <img class="logo" src="./images/candleLogo.jpg" alt="">
-            </div>
-                <a class="topLink" href="./index.html">Hem</a>
-                <a class="topLink" href="./productpage.html">Produkter</a>
-                <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink">Admin</a>
-            <div class="cart-container">
-                <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
-                <a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a>
-            </div>
+          <div class="dropdown-menu">
+            <button class="menu-button">
+              <div class="link"></div>
+              <div class="link"></div>
+              <div class="link"></div>
+            </button>
+          </div>
+          <div class="header-text">
+            <h2>Candle store</h2>
+            <img class="logo" src="./images/candleLogo.jpg" alt="" />
+          </div>
+          <a href="./index.html" class="topLink">Hem</a>
+          <a href="./productpage.html" class="topLink">Produkter</a>
+          <a class="topLink">Kontakt</a>
+          <a id="login" class="topLink">Admin</a>
+          <div class="cart-container">
+            <a href="./wishlist.html"
+              ><img class="icons" src="./images/heartIcon.jpg"
+            /></a>
+            <a href="./varukorg.html"
+              ><img class="icons" src="./images/cart.jpg"
+            /></a>
+          </div>
         </div>
-    </header>
+      </header>
     <!--Header slut-->
     <!--Product page börjar-->
     <main>
@@ -57,27 +69,31 @@
                     <!--En produkt-->
                     <div class="product">
                         <div class="product-content">
-                            <div class="product-img">
-                                <img src="./images/knut.JPG" alt="Produktbild">
-                            </div>
-                            <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
-                                <button type="button" class="btn-cart">Lägg till i varukorg</button>
-                                <button type="button" class="btn-buy">Köp nu</button>
-                            </div>
+                          <div class="product-img">
+                            <img src="./images/knut.JPG" alt="Produktbild" />
+                          </div>
+                          <button type="button" class="btn-wish">
+                              <i class="fa fa-heart-o" aria-hidden="true"></i>
+                            </button>
+                          <div class="product-btns">
+                            <button type="button" class="btn-cart">
+                              Lägg till i varukorg
+                            </button>
+                            <button type="button" class="btn-buy">Köp nu</button>
+                          </div>
                         </div>
                         <div class="product-info">
-                            <div class="product-info-top">
-                                <h2 class="sm-title">Ljus</h2>
-                            </div>
-                            <a href="#" class="product-name">Knut</a>
-                            <p class="product-price">89 sek</p>
-                            <p class="product-price">65 sek</p>
+                          <div class="product-info-top">
+                            <h2 class="sm-title">Ljus</h2>
+                          </div>
+                          <a href="#" class="product-name">Knut</a>
+                          <p class="product-price">89 sek</p>
+                          <p class="product-price">65 sek</p>
                         </div>
                         <div class="off-info">
-                            <h2 class="sm-title">25% rabatt</h2>
+                          <h2 class="sm-title">25% rabatt</h2>
                         </div>
-                    </div>
+                      </div>
                     <!--Slut på en produkt-->
                     <!--Produkt 2-->
                     <div class="product">
@@ -85,8 +101,8 @@
                             <div class="product-img">
                                 <img src="./images/pyramid.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -110,8 +126,8 @@
                             <div class="product-img">
                                 <img src="./images/bubbla.jpeg" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -135,8 +151,8 @@
                             <div class="product-img">
                                 <img src="./images/bubblamini.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -160,8 +176,8 @@
                             <div class="product-img">
                                 <img src="./images/snackastor.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -185,8 +201,8 @@
                             <div class="product-img">
                                 <img src="./images/snackamini.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -204,14 +220,14 @@
                         </div>
                     </div>
                     <!--Slut produkt 6-->
-                    <!--Produkt 7-->
+                    <!--Produkt 7
                     <div class="product">
                         <div class="product-content">
                             <div class="product-img">
                                 <img src="./images/gran.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -228,15 +244,15 @@
                             <h2 class="sm-title">25% rabatt</h2>
                         </div>
                     </div>
-                    <!--Slut produkt 7-->
-                    <!--Produkt 8-->
+                    Slut produkt 7
+                    Produkt 8
                     <div class="product">
                         <div class="product-content">
                             <div class="product-img">
                                 <img src="./images/kotte.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -253,15 +269,15 @@
                             <h2 class="sm-title">25% rabatt</h2>
                         </div>
                     </div>
-                    <!--Slut produkt 8-->
-                    <!--Produkt 9-->
+                    Slut produkt 8
+                    Produkt 9
                     <div class="product">
                         <div class="product-content">
                             <div class="product-img">
                                 <img src="./images/trepack.JPG" alt="Produktbild">
                             </div>
+                            <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                             <div class="produkt-btns">
-                                <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                                 <button type="button" class="btn-cart">Lägg till i varukorg</button>
                                 <button type="button" class="btn-buy">Köp nu</button>
                             </div>
@@ -278,12 +294,12 @@
                             <h2 class="sm-title">25% rabatt</h2>
                         </div>
                     </div>
-                    <!--Slut produkt 9-->
+                    Slut produkt 9-->
                 </div>
             </div>
+            <button class="btn-load">Ladda mer</button>
         </div>
-        <!--Product page slutar-->   
-    </main>
+        <!--Product page slutar-->  
     <!--Footer börjar-->
     <footer class="footer">
         <div class="footer-container">
@@ -298,5 +314,6 @@
         </div>   
     </footer>
     <!--Footer slutar-->
+</main>
 </body>
 </html>

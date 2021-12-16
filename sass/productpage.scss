@@ -1,12 +1,8 @@
-:root {
-  --white-light: rgba 255, 255, 255, 0, 5;
-  --linen: #f3eae2;
-  --almond: #f0e0d1;
-  --desert-sand: #e7ccb1;
-  --tan: #c7ab94;
-  --antique-brass: #c69c80;
-  --cafe-au-lait: #b88665;
-  --gray: #ededed;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -28,7 +24,7 @@ body {
   font-weight: 500;
   text-align: center;
   padding: 1.3rem 0;
-  opacity: 0.5;
+  color: $text;
 }
 .md-title {
   font-size: 2rem;
@@ -45,23 +41,24 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
-  opacity: 0.5;
+  color: $text;
   margin: auto;
 }
 
 /* Product section */
 .products {
-  background-color: var(--linen);
+  background-color: $mainColor-linen;
   padding: 3.2rem 0;
 }
 
 .product {
   margin: 2rem;
   position: relative;
+  display: none;
   width: 300px;
 }
 .products-content {
-  background: var(--desert-sand);
+  background: $mainColorBackground;
   padding: 3rem 0.5rem 2rem 0.5rem;
   cursor: pointer;
 }
@@ -77,17 +74,13 @@ body {
   justify-content: center;
   width: 150px;
 }
-
 .btn-wish {
   padding: 0.8rem 0;
   width: 40px;
   height: 40px;
   font-size: 20px;
-  font-family: inherit;
-  text-transform: uppercase;
   border: none;
   transition: all 0.6s ease;
-  display: inline-block;
   background: transparent;
   position: absolute;
   top: 0;
@@ -97,29 +90,43 @@ body {
 .btn-cart,
 .btn-buy {
   padding: 0.8rem 0;
+  width: 100%;
+  height: 50px;
+  margin-top: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  transition: all 0.6s ease;
+}
+.btn-cart,
+.btn-buy,
+.btn-load {
+  background: $secondaryColor;
+  color: white;
+}
+.btn-cart:hover,
+.btn-buy:hover,
+.btn-load:hover {
+  background: white;
+  color: black;
+}
+.btn-load{
+  justify-content: center;
+  padding: 0.8rem 0;
+  width: 8%;
+  margin-left: 45vw;
   display: inline-block;
-  width: 50%;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
   transition: all 0.6s ease;
   margin-top: 3px;
 }
-.btn-cart,
-.btn-buy {
-  background: var(--tan);
-  color: white;
-}
-.btn-cart:hover,
-.btn-buy:hover {
-  background: white;
-  color: black;
-}
-
 .btn-wish:hover {
   color: #fff;
 }
 .product-info {
+  margin-top: 2px;
   background: white;
   padding: 2rem;
 }
@@ -129,7 +136,7 @@ body {
   align-items: center;
 }
 .product-name {
-  color: var(--cafe-au-lait);
+  color: $titleColor;
   display: block;
   text-decoration: none;
   font-size: 1rem;
@@ -144,12 +151,11 @@ body {
 }
 .product-price:first-of-type {
   text-decoration: line-through;
-  color: var(--cafe-au-lait);
+  color: $titleColor;
   font-size: 0.95rem;
 }
-
 .off-info .sm-title {
-  background: var(--tan);
+  background: $secondaryColor;
   color: white;
   display: inline-block;
   padding: 0.5rem;
