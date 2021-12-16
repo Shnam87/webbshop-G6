@@ -1,3 +1,33 @@
+
+
+var imgList = [];
+
+function selectImg(event) {
+    var files = event.target.files;
+
+    for (var i = 0; f = files[i]; i++) {
+
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            addImage(e.target.result)
+        }
+        
+        reader.readAsDataURL(f)
+    }
+    
+}
+
+
+function addImage(imgData){
+    imgList.push(imgData);
+
+    console.log(imdData);
+    localStorage.setItem("images", JSON.stringify(imgList));
+};
+
+
+
 document.querySelector("#objImg").addEventListener("change", openFile);
 
 function openFile(e) {
@@ -17,10 +47,18 @@ function openFile(e) {
 
 document.querySelector("#save").addEventListener("click", productInfo);
 
-const products = [];
+
+
+let productListIndex = localStorage.length -1;
+let prodID = "product_" + productListIndex ;
+
+const products = JSON.parse(localStorage.getItem(prodID)) || [];
 
 function productInfo(e) {
-    e.preventDefault();
+    //e.preventDefault();
+
+
+    //const prodID = document.querySelector("#productID").value;
 
     const name = document.querySelector("#objName").value;
 
@@ -31,6 +69,7 @@ function productInfo(e) {
     const prodImg = localStorage.getItem("objImg");
 
     let newProduct = {
+        //prodID:prodID,
         name:name,
         price:price,
         description:description,
@@ -43,3 +82,8 @@ function productInfo(e) {
 
     localStorage.setItem(prodID, JSON.stringify(products));
 }
+ 
+
+
+
+console.log(prodID);

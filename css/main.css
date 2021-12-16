@@ -199,6 +199,39 @@ main {
   border: 1px solid #888;
   width: 80%; }
 
+.adminForm {
+  width: 60%;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #e7ccb1;
+  background-image: url(./images/boxes.jpg);
+  background-position: right top;
+  background-repeat: no-repeat;
+  padding: 1px 1px 1px 20px; }
+
+.adminForm-label {
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 1px; }
+
+.adminForm-input {
+  width: 50%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 12px 12px 30px;
+  margin: 16px 10px 16px 10px; }
+
+.adminForm-textarea, .adminForm-button {
+  width: 95%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 12px 12px 12px 20px;
+  margin: 4px 4px 16px 1px; }
+
 :root {
   --white-light: rgba 255, 255, 255, 0, 5;
   --linen: #f3eae2;
