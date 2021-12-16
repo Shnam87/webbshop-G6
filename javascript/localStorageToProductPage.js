@@ -1,6 +1,6 @@
 let productListIndex = localStorage.length -1;
 let prodID = "product_" + productListIndex ;
-
+let id= 0;
 console.log(prodID);
 
 const productString= localStorage.getItem(prodID);
@@ -21,6 +21,7 @@ function displayInfo() {
                 <div class="produkt-btns">
                     <button type="button" class="btn-wish"><i class="fa fa-heart-o" aria-hidden="true"></i></button>
                     <button type="button" class="btn-cart">Lägg till i varukorg</button>
+                    <input type="hidden" value="${id++}">
                     <button type="button" class="btn-buy">Köp nu</button>
                 </div>
             </div>
