@@ -5,14 +5,14 @@
     margin: 0px;
 }
 
-
 .header {
     position: relative;
     display: flex;
     width: 100%;
-    height: 5.7vw;
+    height: 5.4vw;
     justify-content: center;
     align-items: center;
+    font-size: 1.4vw;
 }
 
 .header-text {
@@ -27,12 +27,10 @@
     font-size: 3vw;
     font-weight: 400;
     color: $text;
-    width: 290px;
     letter-spacing: 3px;
 }
 .logo {
-    height: 5vw;
-    margin-left: -12px;
+    height: 4.5vw;
     margin-top: 10px;
 }
  .menu-button {
@@ -129,7 +127,7 @@
 }
 .action-buttons{
     color: $text;
-    margin: 7px;
+    margin: 12px;
     font-size: 28px;
 }
 
@@ -178,13 +176,13 @@
 }
 
 .left {
-    background-image: url(/images/pyramidochknut.JPG);
+    background-image: $leftImage;
     background-size: cover;
     background-position: center;
 }
 
 .right {
-    background-image: url(/images/pastellbubblormini.JPG);
+    background-image: $rightImage;
     background-size: cover;
     background-attachment: fixed;
     background-position: 470px -980px;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Candle store - Admin page</title>
-    <script src="./javascript/admin.js" defer></script>
+    <script src="./javascript/adminToLocalStorage.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -38,25 +38,27 @@
     </header>
 
     <main>
-        <div>
-            <h1>Fyll i uppgifter och bild om föremålet:</h1>
-            <form action="">
-            <br><br>
-            <label for="objName">Produktens Namn: </label>
-            <input type="text" name="" id="objName" placeholder="Vad vill du lägga till?" required>
-            <br><br>
-            <label for="objImg">Produktens Bild: </label>
-            <input type="file" accept="image/*" name="" id="objImg">
-            <br><br>
-            <label for="objPrice">Produktens Pris: </label>
-            <input type="number" min="1" name="" id="objPrice" placeholder="Priset ?" >
-            <br><br>
-            <label for="objDescription">Produktens Beskrivning: </label> <br>
-            <textarea name="" id="objDescription" cols="35" rows="4" placeholder="Kort beskrivning"></textarea>
-            <br><br>
-            <button id="save">Lägg till ny föremål</button>
-            </form>
-        </div>
+        <form action="" class="adminForm">
+            <h2>Fyll i uppgifter och bild om föremålet:</h2>
+    
+            <div>
+                <label class="adminForm-label" for="objName">Produktens Namn: </label>
+                <input type="text" class="adminForm-input" name="" id="objName" placeholder="Vad vill du lägga till?" required>
+            </div>
+            <div>
+                <label class="adminForm-label" for="objImg">Produktens Bild: </label>
+                <input type="file" accept="image/*" class="adminForm-input" name="" id="objImg">
+            </div>
+            <div>
+                <label class="adminForm-label" for="objPrice">Produktens Pris: </label>
+                <input type="number" min="1" class="adminForm-input" name="" id="objPrice" placeholder="Priset ?">
+            </div>
+            <div>
+                <label class="adminForm-label" for="objDescription">Produktens Beskrivning: </label>
+                <textarea name="" class="adminForm-textarea" id="objDescription" cols="35" rows="4" placeholder="Kort beskrivning"></textarea>
+            </div>
+                <button id="save" class="adminForm-button">Lägg till ny föremål</button>
+        </form>
     </main>
 
     <footer class="footer">
