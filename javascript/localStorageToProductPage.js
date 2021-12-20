@@ -1,6 +1,6 @@
 let productListIndex = localStorage.length -1;
 let prodID = "product_" + productListIndex ;
-let id= 2;
+let id= 1;
 console.log(prodID);
 
 const productString= localStorage.getItem(prodID);
