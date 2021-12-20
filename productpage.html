@@ -31,17 +31,6 @@
   <body>
     <!--Header börjar-->
     <header>
-      <div class="header">
-        <div class="dropdown-menu">
-          <button class="menu-button">
-            <div class="link"></div>
-            <div class="link"></div>
-            <div class="link"></div>
-          </button>
-        </div>
-        <div class="header-text">
-          <h2>Candle store</h2>
-          <img class="logo" src="./images/candleLogo.jpg" alt="" />
         <div class="header">
             <div class="dropdown-menu">
                 <button class="menu-button">
@@ -61,38 +50,28 @@
             </div>
                 <a class="topLink" href="./index.html">Hem</a>
                 <a class="topLink" href="./productpage.html">Produkter</a>
-                <a class="topLink">Kontakt</a>
-                <a class="topLink">Admin</a>
+                <a class="topLink" href="./contactpage.html">Kontakt</a>
+                <a class="topLink" href="" id="login">Admin</a>
             <div class="cart-container">
-                <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
-               <div class="test"><a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a></div> 
+                <a href="./wishlist.html" class="action-buttons"><i class="fa fa-heart" aria-hidden="true"></i></a>
+                <a href="./varukorg.html" class="action-buttons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </div>
         </div>
-        <a href="./index.html" class="topLink">Hem</a>
-        <a href="./productpage.html" class="topLink">Produkter</a>
-        <a href="./contactpage.html" class="topLink">Kontakt</a>
-        <a id="login" class="topLink">Admin</a>
-        <div class="cart-container">
-          <a href="./wishlist.html" class="action-buttons"><i class="fa fa-heart" aria-hidden="true"></i></a>
-          <a href="./varukorg.html" class="action-buttons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
-      </div>
-      </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <h1 id="login-header">Login</h1>
+                <form id="login-form">
+                    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                    <input type="submit" value="Login" id="login-form-submit">
+                </form>
+            </div>
+        </div>
     </header>
     <!--Header slut-->
     <!--Product page börjar-->
     <main>
-      <div class="products">
-        <div class="products-container">
-          <h1 class="lg-title">Alla produkter</h1>
-          <p class="text-light">
-            Här hittar ni vårat breda urval av handgjutna ljus
-          </p>
-          <div class="product-items">
-            <!--En produkt-->
-            <div class="product">
-              <div class="product-content">
-                <div class="product-img">
-                  <img src="./images/knut.JPG" alt="Produktbild" />
+      
         <div class="products">
             <div class="products-container">
                 <h1 class="lg-title">Alla produkter</h1>
