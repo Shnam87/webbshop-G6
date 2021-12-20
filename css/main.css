@@ -459,7 +459,7 @@ body {
     grid-template-columns: repeat(3, 1fr); } }
 
 /*---------------------Contact page----------------------*/
-.contactPage .wishlistPage{
+.contactPage {
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -468,7 +468,7 @@ body {
   padding-bottom: 5vw;
   color: #705b5b; }
 
-.contactPageContainer .wishlistPageContainer {
+.contactPageContainer {
   max-width: 1100px;
   width: 100%;
   margin-top: 5%;
