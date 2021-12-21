@@ -1,9 +1,11 @@
+/*---------------------Admin page----------------------*/
+
 .adminForm {
     width: 60%;
     box-sizing: border-box;
     border-radius: 30px;
     background-color: #e7ccb1;
-    background-image: url(./images/boxes.jpg);
+    background-image: $adminFormBG;
     background-position: right top; 
     background-repeat: no-repeat;
     padding: 1px 1px 1px 20px;

@@ -131,12 +131,12 @@
   margin-top: 10px; }
 
 .left {
-  background-image: url(/images/bulb.jpg);
+  background-image: url(./images/pyramidochknut.jpg);
   background-size: cover;
   background-position: center; }
 
 .right {
-  background-image: url(/images/candleHand.jpg);
+  background-image: url(./images/pastellbubblormini.jpg);
   background-size: cover;
   background-position: center; }
 
@@ -199,6 +199,7 @@ main {
   border: 1px solid #888;
   width: 80%; }
 
+/*---------------------Admin page----------------------*/
 .adminForm {
   width: 60%;
   box-sizing: border-box;

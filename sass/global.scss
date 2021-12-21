@@ -161,13 +161,13 @@ display: block;
 }
 
 .left {
-    background-image: url(/images/bulb.jpg);
+    background-image: $leftImage;
     background-size: cover;
     background-position: center;
 }
 
 .right {
-    background-image: url(/images/candleHand.jpg);
+    background-image: $rightImage;
     background-size: cover;
     background-position: center;
 }
