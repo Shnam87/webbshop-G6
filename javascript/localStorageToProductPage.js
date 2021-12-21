@@ -1,12 +1,8 @@
-let productListIndex = localStorage.length -1;
-let prodID = "product_" + productListIndex ;
-let id= 2;
-console.log(prodID);
-
-const productString= localStorage.getItem(prodID);
-const products = JSON.parse(productString)
 
 const products_Element = document.querySelector(".product-items");
+
+let products = JSON.parse(localStorage.getItem("productInfo"));
+console.log(products)
 
 function displayInfo() {
     products.forEach( (product) => {
@@ -17,8 +13,7 @@ function displayInfo() {
                     <div class="product-img">
                         <img src="${product.prodImg}" alt="${product.name}">
                     </div>
-                    <input type="hidden" id="${id++}">
-                    <button type="button" class="btn-wish">
+                    <button type="button" class="btn-wish" onclick="addToCart(${product.id})">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                     </button>
                     <div class="product-btns">
@@ -31,7 +26,7 @@ function displayInfo() {
                         <h2 class="sm-title">${product.description}</h2>
                     </div>
                     <p class="product-price">${product.price} </p>
-                    <p class="product-price">${product.price * 0.75}</p>
+                    <p class="product-price"></p>
                 </div>
                 <div class="off-info">
                     <h2 class="sm-title">25% rabatt</h2>

@@ -1,74 +1,67 @@
+// ARRAY FROM LOCALSTORAGE
+console.log(products)
 
-var btn = document.querySelectorAll(".btn-wish");
 
-for (var i = 0; i <btn.length; i++) {
-    var button = btn[i];
-    
-    button.addEventListener("click", function (event){
-        buttonClicked = event.target
+// ADD TO CART
+function addToCart(id) {
 
-        var input = buttonClicked.parentElement;
-        console.log (input)
-    })
-
+    console.log(id)
+  
+    var item = products.find(() => id === id);
+    console.log(item)
+  
 }
+
+
 
 /*
+// ARRAY FROM LOCALSTORAGE
+
+let localStorageList = JSON.parse(localStorage.getItem("product_1"))  //const productsEl = document.querySelector(".products");
+console.log(localStorageList)
 
 
-const proName = document.querySelector(".product-name").innerHTML;
-const proImg = document.querySelector("#img").src;
- 
+//EVENTLISTENERS
 
-const prolist = [];
+let btn = document.querySelectorAll(".btn-wish");
 
-const prodoc = {
-    Name: proName,
-    Img: proImg,
+
+
+for (var i = 0; i <btn.length; i++) {
+    btn[i].addEventListener("click", () =>{
+        let id = btn.id;
+        console.log(id)
+        //addToCart(id)
+    })
 }
+   // console.log(proName[i].innerHTML)
 
-prolist.push(prodoc);
-
-console.log (prolist);
-
+// SELECT ELEMENTS
 
 
-const proName = document.querySelectorAll(".product-name").innerHTML;
-const proImg = document.querySelectorAll("#img").src;
+// cart array
+//let cart = JSON.parse(localStorage.getItem("CART")) || [];
+let cart = [];
 
-const prolist = [];
+//updateCart();
 
-const addContact=()=>{
+
+// ADD TO CART
+function addToCart(id) {
+    // check if prodcut already exist in cart
+    if (cart.some((item) => item.id === id)) {
+        return;
+       //changeNumberOfUnits("plus", id);
+    } else {
+      const item = products.find((product) => product.id === id);
   
-    
-    const prodoc = {
-        Name: proName,
-        Img: proImg,
+      cart.push({
+        ...item,
+        //numberOfUnits: 1,
+      });
     }
-    
-    
-    prolist.push(prodoc);
-    
-    console.log (prolist);
-}
-  
-addContact();
-*/
+    console.log (cart)
+    //updateCart();
+  }
 
-
-
-
-
-
-
-
-
-  
-
-    
-
-
-    
-
-
-
+  */

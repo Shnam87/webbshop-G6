@@ -1,5 +1,4 @@
 
-
 var imgList = [];
 
 function selectImg(event) {
@@ -44,21 +43,15 @@ function openFile(e) {
     reader.readAsDataURL(input);
 };
 
-
 document.querySelector("#save").addEventListener("click", productInfo);
 
 
-
-let productListIndex = localStorage.length -1;
-let prodID = "product_" + productListIndex ;
-
-const products = JSON.parse(localStorage.getItem(prodID)) || [];
+const productsListLocal = JSON.parse(localStorage.getItem("productInfo")) || [];
 
 function productInfo(e) {
     //e.preventDefault();
 
-
-    //const prodID = document.querySelector("#productID").value;
+    const id = document.querySelector("#objId").value;
 
     const name = document.querySelector("#objName").value;
 
@@ -69,21 +62,19 @@ function productInfo(e) {
     const prodImg = localStorage.getItem("objImg");
 
     let newProduct = {
-        //prodID:prodID,
+        id:id,
         name:name,
         price:price,
         description:description,
         prodImg:prodImg
     }
 
-    products.push(newProduct);
+    productsListLocal.push(newProduct);
 
-    var prodID = "product_" + localStorage.length;
-
-    localStorage.setItem(prodID, JSON.stringify(products));
+    localStorage.setItem("productInfo", JSON.stringify(productsListLocal));
 }
  
 
 
 
-console.log(prodID);
+console.log(productsListLocal);
