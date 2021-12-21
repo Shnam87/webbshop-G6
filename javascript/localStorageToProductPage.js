@@ -1,9 +1,5 @@
-let productListIndex = localStorage.length -1;
-let prodID = "product_" + productListIndex ;
-let id= 2;
-console.log(prodID);
-
-const productString= localStorage.getItem(prodID);
+let id = 01;
+const productString= localStorage.getItem("productLista");
 const products = JSON.parse(productString)
 
 const products_Element = document.querySelector(".product-items");
