@@ -1,7 +1,7 @@
 
 console.log(products)
 
-let btnCart = document.querySelectorAll(".btn-cart");
+let btnCart = document.querySelectorAll(".btn-wish");
 
 
 for (let i=0; i < btnCart.length; i++){
