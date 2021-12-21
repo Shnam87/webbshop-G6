@@ -13,7 +13,7 @@ function displayInfo() {
                     <div class="product-img">
                         <img src="${product.prodImg}" alt="${product.name}">
                     </div>
-                    <button type="button" class="btn-wish" onclick="addToCart(${product.id})">
+                    <button type="button" class="btn-wish">
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                     </button>
                     <div class="product-btns">

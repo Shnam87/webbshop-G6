@@ -66,7 +66,7 @@ function productInfo(e) {
         name:name,
         price:price,
         description:description,
-        prodImg:prodImg
+        prodImg:prodImg,
     }
 
     productsListLocal.push(newProduct);
