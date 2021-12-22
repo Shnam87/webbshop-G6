@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./javascript/main.js" defer></script>
-
+    <script src="./javascript/cart.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
@@ -33,8 +33,12 @@
                 <a class="topLink" href="./contactpage.html">Kontakt</a>
                 <a class="topLink">Admin</a>
             <div class="cart-container">
-                <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
-                <a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a>
+                <div class="cart">
+                    <a href="./wishlist.html" class="action-buttons">
+                    <i class="fa fa-heart" aria-hidden="true"></i><span>0</span>
+                    </a>
+                </div>
+                <a href="./varukorg.html" class="action-buttons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
             </div>
         </div>
     </header>
@@ -43,6 +47,17 @@
         <h2>Slutför din beställning</h2>
             <div class="cart-box">
                 <h2>Din varukorg</h2>
+            </div>
+            <div class="cart-products-container">
+                <div class="cart-product-header">
+                    <h5 class="cart-product-titel">PRODUKT</h5>
+                    <h5 class="cart-price">PRIS</h5>
+                    <h5 class="cart-quantity">ANTAL</h5>
+                    <h5 class="cart-total">TOTALT</h5>
+                </div>
+                <div class="cart-products">
+    
+                </div>
             </div>
         </div>
     </main>

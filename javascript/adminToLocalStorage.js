@@ -47,6 +47,8 @@ function productInfo(e) {
 
     const name = document.querySelector("#objName").value;
 
+    const tag = name.toLowerCase();
+
     const price = document.querySelector("#objPrice").value;
 
     const description = document.querySelector("#objDescription").value;
@@ -55,9 +57,11 @@ function productInfo(e) {
 
     let newProduct = {
         name:name,
-        price:price,
+        tag: tag,
+        price:Number(price),
         description:description,
-        prodImg:prodImg
+        prodImg:prodImg,
+        inCart:Number(0)
     }
     
     products.push(newProduct);

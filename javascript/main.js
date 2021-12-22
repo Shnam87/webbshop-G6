@@ -30,3 +30,4 @@ $(".btn-load").on("click", function(){
 			$(".btn-load").fadeOut();
 		}
 	})
+  
