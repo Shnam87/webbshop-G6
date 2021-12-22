@@ -1,9 +1,9 @@
-//Sharams
+
 /*
 const productsOnProductPage = JSON.parse(localStorage.getItem("productLista"))
 //console.log(productsOnProductPage)
 
-let btnCart = document.querySelectorAll(".btn-wish");
+let btnCart = document.querySelectorAll(".btn-cart");
 
 
 for (let i=0; i < btnCart.length; i++){
@@ -18,7 +18,7 @@ function onLoadCartNumbers(){
     let productNumbers = localStorage.getItem("cartNumbers");
 
     if(productNumbers) {
-        document.querySelector(".cart span").textContent = productNumbers;
+        document.querySelector(".cart-icon span").textContent = productNumbers;
     }
 }
 
@@ -29,10 +29,10 @@ function cartNumbers (product){
     
     if(productNumbers) {
         localStorage.setItem("cartNumbers", productNumbers + 1)
-        document.querySelector(".cart span").textContent = productNumbers + 1;
+        document.querySelector(".cart-icon span").textContent = productNumbers + 1;
     }else{
         localStorage.setItem("cartNumbers", 1)
-        document.querySelector(".cart span").textContent = 1;
+        document.querySelector(".cart-icon span").textContent = 1;
     }
     setItems(product)
 }
