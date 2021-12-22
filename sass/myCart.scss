@@ -1,0 +1,21 @@
+.cart-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e7ccb1;
+    font-size: 18px;
+}
+  
+.cart-item .item-info {
+    background-color: #f2f2f2;
+    border-radius: 20px;  
+    padding: 10px;
+}
+  
+.item-info img {
+    background-color: #c7ab94;
+    display: flex;
+    border-radius: 30px;
+    width: 200px;
+    height: 200px;
+}
