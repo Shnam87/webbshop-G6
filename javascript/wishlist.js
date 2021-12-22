@@ -3,13 +3,13 @@
 const productsOnProductPage = JSON.parse(localStorage.getItem("productLista"))
 //console.log(productsOnProductPage)
 
-let btnAddToWishlist = document.querySelectorAll(".btn-wish");
-
+let btnAddToWishlist = document.querySelectorAll(".btn-wish");  //Knapp med hjärta
 
 for (let i=0; i < btnAddToWishlist.length; i++){
-    btnAddToWishlist[i].addEventListener("click", () => {
-    cartNumbers(productsOnProductPage[i]);
-    totalCost(productsOnProductPage[i])
+    btnAddToWishlist[i].addEventListener("click", () => {   //Loopar alla "hjärt" knappar på produkterna, och varje knapp får ett [i] nummer.
+    cartNumbers(productsOnProductPage[i]);                                          
+    //totalCost(productsOnProductPage[i])
+    
   })
 }
 
@@ -58,8 +58,8 @@ function setItems (product){
     }
     localStorage.setItem(("productsInWishlist"),JSON.stringify(cartItems));
 }
-
-
+*/
+/*
 function totalCost(product) {
     //console.log("The product price is", product.price)
     let cartCost = localStorage.getItem("totalCost")
@@ -75,6 +75,9 @@ function totalCost(product) {
  
 
 }
+*/
+
+/*
 
 console.log(("productsInWishlist"))
 
@@ -82,28 +85,18 @@ function displayCart(){
     let cartItems = localStorage.getItem("productsInWishlist")
     cartItems = JSON.parse(cartItems);
     let cartProducts = document.querySelector
-    (".cart-products");
+    (".wlist-products");
 
-    console.log(cartItems);
     if (cartItems && cartProducts) {
-
-        console.log("running")
         cartProducts.innerHTML = ``;
         Object.values(cartItems).map(item => {
             cartProducts.innerHTML += `
-            <div class= "cart-product">
-                <button class="remove-product"></button>
+            <div class= "wlist-product">
+                <button class="wlist-remove-product">X</button>
                 <img src="" alt="">
                 <span>${item.name}</span>
-            </div>
-            <div class="cart-price"></div>
-            <div class="cart-quantity">
-                <button> - </button>
-                <span>${item.inCart}</span>
-                <button> + </button>
-            </div>
-            <div class="cart-total">
-                ${item.inCart * item.price}
+                <div class="wlist-product-price">${item.price}</div>
+                <div class="wlist-product-description">${item.description}</div>
             </div>
            `
         });
