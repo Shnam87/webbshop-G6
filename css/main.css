@@ -10,7 +10,7 @@
   font-size: 12px;
   text-align: center;
   background-color: #f3eae2;
-  color: #747474;
+  color: #5c5c5c;
   padding: 8px; }
 
 .header {
@@ -31,7 +31,7 @@
 .header-text h2 {
   font-size: 3vw;
   font-weight: 400;
-  color: #747474;
+  color: #5c5c5c;
   width: 290px;
   letter-spacing: 3px; }
 
@@ -97,7 +97,7 @@
 .topLink {
   margin: 15px;
   text-decoration: none;
-  color: #747474; }
+  color: #5c5c5c; }
 
 .topLink:link {
   cursor: pointer; }
@@ -120,7 +120,7 @@
   height: 4vw; }
 
 .action-buttons {
-  color: #747474;
+  color: #5c5c5c;
   margin: 7px;
   font-size: 28px; }
 
@@ -281,7 +281,7 @@ body {
   font-weight: 500;
   text-align: center;
   padding: 1.3rem 0;
-  color: #747474; }
+  color: #5c5c5c; }
 
 .md-title {
   font-size: 2rem;
@@ -290,7 +290,7 @@ body {
 .product-info-top .sm-title {
   font-weight: 100;
   font-size: 1rem;
-  color: #747474;
+  color: #5c5c5c;
   padding: 0.6rem 0; }
 
 .text-light {
@@ -299,7 +299,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
-  color: #747474;
+  color: #5c5c5c;
   margin: auto; }
 
 /* Product section */
@@ -551,3 +551,30 @@ body {
     max-width: 450px;
     margin: auto;
     padding: 20px; } }
+
+.check {
+  font-size: 75px;
+  font-weight: 100;
+  color: #f3eae2;
+  text-align: center; }
+
+.confirmation-text {
+  text-align: center;
+  height: 500px;
+  color: #5c5c5c;
+  letter-spacing: 1px;
+  margin-top: 4rem; }
+  .confirmation-text h1 {
+    font-weight: 400;
+    font-size: 3vw;
+    letter-spacing: 2px;
+    font-family: 'Playfair Display', serif; }
+  .confirmation-text h3 {
+    margin-top: 5px;
+    font-weight: 200;
+    font-family: "Roboto", sans-serif; }
+  .confirmation-text p {
+    margin-top: 5px;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100; }
