@@ -205,8 +205,10 @@
 /*---------------FOOTER-------------------*/
 .footer {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 10px; }
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-top: 10px;
+  color: #5c5c5c; }
 
 .footer-container {
   display: flex;
@@ -560,7 +562,6 @@ body {
 
 .confirmation-text {
   text-align: center;
-  height: 500px;
   color: #5c5c5c;
   letter-spacing: 1px;
   margin-top: 4rem; }
