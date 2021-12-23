@@ -1,5 +1,5 @@
 
-
+/*
 const productsOnProductPage = JSON.parse(localStorage.getItem("productLista"))
 //console.log(productsOnProductPage)
 
@@ -115,3 +115,4 @@ function displayCart(){
 
 onLoadCartNumbers();
 displayCart();
+*/

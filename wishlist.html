@@ -34,8 +34,9 @@
                 <a class="topLink">Admin</a>
             <div class="cart-container">
                 <div class="heart-icon">
-                    <a href="./wishlist.html" class="action-buttons">
-                      <i class="fa fa-heart" aria-hidden="true"></i><span>0</span>
+                    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+                    <a href="./wishlist.html" class="action-buttons" onclick="openNav()">
+                      <i class="fa fa-heart" aria-hidden="true"></i><span></span>
                     </a>
                 </div>
                 <div class="cart-icon">  
@@ -47,13 +48,26 @@
         </div>
     </header>
     <main class="wishlist-page">
-        <div class="wishlist-page-container">
-
+       
         
-            <div class="wlist-products">
-
-            </div>
-            <!---
+        <aside id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <h2>Favoriter</h2>
+            <a href="#">Favoriter</a>
+        
+            <ul class="favorite-item-list">
+                <!--------Lista med proudukter--------->
+            </ul>
+            
+        </aside>
+            
+        
+        
+          
+          <div>
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+          
+        <!---
             <div class="cart-products-container">
                 <div class="cart-product-header">
                     <h5 class="cart-product-titel">PRODUKT</h5>
@@ -66,13 +80,6 @@
                 </div>
             </div>
             -->
-        </div>
-
-
-
-
-
-
 
 
 

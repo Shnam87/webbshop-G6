@@ -60,7 +60,7 @@ function productInfo(e) {
         tag: tag,
         price:Number(price),
         description:description,
-        prodImg:prodImg,
+        prodImg:src (prodImg),
         inCart:Number(0)
     }
     
