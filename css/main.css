@@ -221,6 +221,19 @@ main {
   height: 30vw;
   background-color: white; }
 
+/*-----------------------Admin Login--------------------------------*/
+.admin-text {
+  margin-top: 8rem;
+  margin-bottom: 0.5rem; }
+
+.admin-btn {
+  width: 150px;
+  background-color: #8f8c8c;
+  color: white;
+  padding: 10px 10px;
+  margin: 10px 0;
+  border-radius: 10px; }
+
 .modal {
   display: none;
   position: fixed;
@@ -235,11 +248,51 @@ main {
   background-color: rgba(0, 0, 0, 0.8); }
 
 .modal-content {
-  background-color: #fefefe;
+  background-color: #f3eae2;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; }
+  width: 50%;
+  font-size: 25px; }
+
+#login-form {
+  align-self: flex-start;
+  display: grid;
+  justify-items: center;
+  align-items: center; }
+
+.login-form-field {
+  width: 60%;
+  font-size: 18px;
+  margin-top: 1rem;
+  border-radius: 20px;
+  padding: 1rem;
+  background-color: lightyellow; }
+
+#login-form-submit {
+  width: 60%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: darkslategray;
+  cursor: pointer; }
+
+#username-field {
+  background-image: url(./images/Id-Badge.png);
+  background-size: 25px;
+  background-position: 20px 10px;
+  background-repeat: no-repeat;
+  padding-left: 55px; }
+
+#password-field {
+  background-image: url(./images/Lock-Icon.png);
+  background-size: 25px;
+  background-position: 20px 10px;
+  background-repeat: no-repeat;
+  padding-left: 55px; }
 
 /*---------------------Admin page----------------------*/
 .adminForm {
