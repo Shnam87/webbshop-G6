@@ -13,8 +13,11 @@ function displayCartItems() {
         cartItems_Element.innerHTML += `
             <div class="cart-item">
                 <h4 class="item-name">${item.name}</h4>
+                <button onclick="removeProduct()">Ta bort produkt</button>
                 <h4 class="item-price">${item.price} SEK
                 </h4>
+            
+
             </div>
         `;
     });
@@ -22,9 +25,12 @@ function displayCartItems() {
    
 }
 
-
-
-
+function removeProduct() {
+    var removeName = document.querySelector(".item-name");
+    removePrice = document.querySelector(".item-price")
+    removeName.remove();
+    removePrice.remove();
+  }
 
 
 function totalCost(item) {
