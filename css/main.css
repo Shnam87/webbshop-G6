@@ -598,3 +598,7 @@ h4 {
 
 .item-name {
   font-weight: bold; }
+
+.totalSumma {
+  font-weight: bold;
+  margin-top: 4vw; }
