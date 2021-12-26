@@ -1,5 +1,3 @@
-
-
 var imgList = [];
 
 function selectImg(event) {
@@ -12,20 +10,16 @@ function selectImg(event) {
         reader.onload = function (e) {
             addImage(e.target.result)
         }
-        
         reader.readAsDataURL(f)
     }
-    
 }
-
 
 function addImage(imgData){
     imgList.push(imgData);
 
-    console.log(imdData);
+//    console.log(imdData);
     localStorage.setItem("images", JSON.stringify(imgList));
 };
-
 
 
 document.querySelector("#objImg").addEventListener("change", openFile);
@@ -37,28 +31,19 @@ function openFile(e) {
     reader.onload = function(){
         const dataURL = reader.result;
 
-        console.log(dataURL);
+//        console.log(dataURL);
 
         localStorage.setItem("objImg", dataURL);
     };
     reader.readAsDataURL(input);
 };
 
-
 document.querySelector("#save").addEventListener("click", productInfo);
 
-
-
-let productListIndex = localStorage.length -1;
-let prodID = "product_" + productListIndex ;
-
-const products = JSON.parse(localStorage.getItem(prodID)) || [];
+const products = JSON.parse(localStorage.getItem("productLista")) || [];
 
 function productInfo(e) {
     //e.preventDefault();
-
-
-    //const prodID = document.querySelector("#productID").value;
 
     const name = document.querySelector("#objName").value;
 
@@ -69,21 +54,13 @@ function productInfo(e) {
     const prodImg = localStorage.getItem("objImg");
 
     let newProduct = {
-        //prodID:prodID,
         name:name,
         price:price,
         description:description,
         prodImg:prodImg
     }
-
+    
     products.push(newProduct);
 
-    var prodID = "product_" + localStorage.length;
-
-    localStorage.setItem(prodID, JSON.stringify(products));
+    localStorage.setItem("productLista", JSON.stringify(products));
 }
- 
-
-
-
-console.log(prodID);

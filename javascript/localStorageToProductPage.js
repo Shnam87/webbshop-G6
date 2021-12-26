@@ -1,9 +1,5 @@
-let productListIndex = localStorage.length -1;
-let prodID = "product_" + productListIndex ;
-let id= 1;
-console.log(prodID);
-
-const productString= localStorage.getItem(prodID);
+let id = 01;
+const productString= localStorage.getItem("productLista");
 const products = JSON.parse(productString)
 
 const products_Element = document.querySelector(".product-items");
@@ -22,10 +18,11 @@ function displayInfo() {
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                     </button>
                     <div class="product-btns">
-                        <button type="button" class="btn-cart">Lägg till i varukorg</button>
+                        
                     </div>
                 </div>
                 <div class="product-info">
+                <button type="button" class="btn-cart"">Lägg till i varukorg</button>
                     <a href="#" class="product-name">${product.name}</a>
                     <div class="product-info-top">
                         <h2 class="sm-title">${product.description}</h2>

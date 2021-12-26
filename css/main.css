@@ -568,3 +568,33 @@ body {
     max-width: 450px;
     margin: auto;
     padding: 20px; } }
+
+.cart-flex {
+  padding: 3vw; }
+
+.cart-box {
+  text-align: center;
+  padding: 6vw;
+  margin-top: 3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 60vw;
+  min-height: 30vw; }
+
+.rubriker {
+  background-color: black;
+  color: pink; }
+
+.cart-item {
+  display: flex;
+  justify-content: space-around; }
+
+h2 {
+  font-size: 2.5vw; }
+
+h4 {
+  font-size: 2vw; }
+
+.item-name {
+  font-weight: bold; }
