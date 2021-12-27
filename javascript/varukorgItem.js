@@ -9,6 +9,7 @@ function displayCartItems() {
     cartItems.forEach(item => {
         cartItems_Element.innerHTML += `
             <div class="cart-item">
+            <img class="imgCart" src="${item.prodImg}" alt="${item.name}">
                 <h4 class="item-name">${item.name}</h4>
                 <button onclick="removeProduct()">Ta bort produkt</button>
                 <h4 class="item-price">${item.price} SEK
@@ -22,13 +23,13 @@ function displayCartItems() {
 
 function removeProduct() {
     var removeName = document.querySelector(".item-name");
-    removePrice = document.querySelector(".item-price")
+    var removePrice = document.querySelector(".item-price");
     removeName.remove();
     removePrice.remove();
     window.localStorage.removeItem("myCart");
   }
 
-  var totalSumma = 0
+  var totalSumma = 0;
 
 
   function totalCost() {
@@ -48,6 +49,8 @@ console.log(totalSumma)
 
 displayCartItems();
 totalCost();
+
+
 
 
 
