@@ -1,89 +1,86 @@
-.wishlist-page{
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5vw;
-    transition: margin-left .5s;
-    padding: 16px;
-    
-}
-
-
-
-.favorite-item{
-    border: 2px solid black;
-    border-bottom: 1px solid #dedede;
-    position: relative;
-    display: -webkit-flex;
-    display: flex;
-    flex-direction: row;
-    color: #818181;
-}
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 5.4vw;
-    left: 0;
-    background-color: white;
-    border: 1px solid black;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-  }
-  
-  .favorite-item-list{
-    width: 100%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    padding: 10px;
-    display: block;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 5.4vw;
+  right: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-.sidenav li {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
+.favorite-h2{
+  padding: 8px 8px 8px 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
 
+.favorite-item-list{
+  width: 100%;
+  margin-top: 5%;
+  padding: 10px;
+}
 
+.favorite-item{
+  padding: 8px 8px 8px 10px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  color: #818181;
+  transition: 0.3s;
+  gap: 20px;
+  align-items: center;
+}
+
+.img-wrap img{
+  width: 55px;
+  
+}
+
+.favorite-details{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+
+.favorite-remove-btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  color: #818181;
+  text-decoration: none;
+  background-color: white;
+  border: white;
+  font-size: 18px;
+  transition: 0.3s;
+}
+  
+.closebtn {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #818181;
+  transition: 0.3s;
+}
+  
 /*-----------------------MEDIA QUERIES--------------------------------*/
 
-@media screen and (min-width: 600px) {
-
-    .wishlist-page{
-        background-color: $mainColor-linen;
-        padding-bottom: 30px;
-    }
-
-    
-    
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
-
 
