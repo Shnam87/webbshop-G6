@@ -1,39 +1,48 @@
 /*---------------------Admin page----------------------*/
 
 .adminForm {
-    width: 60%;
-    box-sizing: border-box;
-    border-radius: 30px;
-    background-color: #e7ccb1;
-    background-image: $adminFormBG;
-    background-position: right top; 
-    background-repeat: no-repeat;
-    padding: 1px 1px 1px 20px;
-  }
-   
-  .adminForm-label {
+  width: 80%;
+  box-sizing: border-box;
+  border-radius: 30px;
+  background-color: #e7ccb1;
+  background-image: $adminFormBG;
+  background-position: right top; 
+  background-repeat: no-repeat;
+  margin-left: 10%;
+  padding: 1rem;
+}
+  
+.adminForm-label {
   box-sizing: border-box;
   font-size: 18px;
-  padding: 1px;
-  }
+  padding: 0.1rem;
+}
   
-  .adminForm-input {
-    width: 50%;
-    box-sizing: border-box;
-    border-radius: 25px;
-    font-size: 16px;
-    background-color: white;
-    padding: 12px 12px 12px 30px;
-    margin: 16px 10px 16px 10px;
-  }
+.adminForm-input {
+  width: 60%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 0.7rem 1.4rem;
+  margin: 1rem;
+}
 
-  .adminForm-textarea, .adminForm-button {
-    width: 95%;
-    box-sizing: border-box;
-    border-radius: 25px;
-    font-size: 16px;
-    background-color: white;
-    padding: 12px 12px 12px 20px;
-    margin: 4px 4px 16px 1px;
+.adminForm-textarea, .adminForm-button {
+  width: 99%;
+  box-sizing: border-box;
+  border-radius: 25px;
+  font-size: 16px;
+  background-color: white;
+  padding: 0.7rem 1.4rem;
+  margin: 0.7rem 0.3rem;
+}
+
+@media screen and (max-width: 550px) {
+  .admin-header {
+    margin: 0.7rem;
   }
-  
+  .adminForm-input {
+    width: 95%;
+  }
+}

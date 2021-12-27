@@ -293,39 +293,69 @@ main {
   background-repeat: no-repeat;
   padding-left: 55px; }
 
+@media screen and (max-width: 550px) {
+  .modal-content {
+    padding: 8px;
+    width: 90%;
+    font-size: 16px; }
+  .login-form-field {
+    width: 80%;
+    font-size: 14px;
+    margin-top: 1rem;
+    border-radius: 20px;
+    padding: 1rem; }
+  #login-form-submit {
+    width: 80%;
+    font-size: 14px; }
+  #username-field {
+    background-size: 20px;
+    background-position: 20px 11px;
+    padding-left: 50px; }
+  #password-field {
+    background-size: 20px;
+    background-position: 20px 11px;
+    padding-left: 50px; } }
+
 /*---------------------Admin page----------------------*/
 .adminForm {
-  width: 60%;
+  width: 80%;
   box-sizing: border-box;
   border-radius: 30px;
   background-color: #e7ccb1;
   background-image: url(./images/boxes.jpg);
   background-position: right top;
   background-repeat: no-repeat;
-  padding: 1px 1px 1px 20px; }
+  margin-left: 10%;
+  padding: 1rem; }
 
 .adminForm-label {
   box-sizing: border-box;
   font-size: 18px;
-  padding: 1px; }
+  padding: 0.1rem; }
 
 .adminForm-input {
-  width: 50%;
+  width: 60%;
   box-sizing: border-box;
   border-radius: 25px;
   font-size: 16px;
   background-color: white;
-  padding: 12px 12px 12px 30px;
-  margin: 16px 10px 16px 10px; }
+  padding: 0.7rem 1.4rem;
+  margin: 1rem; }
 
 .adminForm-textarea, .adminForm-button {
-  width: 95%;
+  width: 99%;
   box-sizing: border-box;
   border-radius: 25px;
   font-size: 16px;
   background-color: white;
-  padding: 12px 12px 12px 20px;
-  margin: 4px 4px 16px 1px; }
+  padding: 0.7rem 1.4rem;
+  margin: 0.7rem 0.3rem; }
+
+@media screen and (max-width: 550px) {
+  .admin-header {
+    margin: 0.7rem; }
+  .adminForm-input {
+    width: 95%; } }
 
 * {
   padding: 0;
