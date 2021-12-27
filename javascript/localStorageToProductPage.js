@@ -18,10 +18,11 @@ function displayInfo() {
                         <i class="fa fa-heart-o" aria-hidden="true"></i>
                     </button>
                     <div class="product-btns">
-                        <button type="button" class="btn-cart">Lägg till i varukorg</button>
+                        
                     </div>
                 </div>
                 <div class="product-info">
+                <button type="button" class="btn-cart"">Lägg till i varukorg</button>
                     <a href="#" class="product-name">${product.name}</a>
                     <div class="product-info-top">
                         <h2 class="sm-title">${product.description}</h2>

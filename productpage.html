@@ -16,6 +16,7 @@
     <script src="js/jquery-latest.min.js" defer></script>
     <script src="./javascript/main.js" defer></script>
     <script src="./javascript/wishlist.js" defer></script>
+    <script src="./javascript/varukorg.js" defer></script>
     <!---------CSS--------->
     <link rel="stylesheet" href="./css/main.css" />
     <!---------FontAwesome--------->
@@ -30,17 +31,52 @@
   <body>
     <!--Header börjar-->
     <header>
-      <div class="header">
-        <div class="dropdown-menu">
-          <button class="menu-button">
-            <div class="link"></div>
-            <div class="link"></div>
-            <div class="link"></div>
-          </button>
-        </div>
-        <div class="header-text">
-          <h2>Candle store</h2>
-          <img class="logo" src="./css/images/candleLogo.jpg" alt="" />
+        <div class="header">
+            <div class="dropdown-menu">
+                <button class="menu-button">
+                    <div class="link"></div>
+                    <div class="link"></div>
+                    <div class="link"></div>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#hem">Hem</a>
+                    <a href="./productpage.html">Produkter</a>
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+            </div>
+            <div class="header-text">
+                 <h2> Candle store </h2>
+                 <img class="logo" src="./images/candleLogo.jpg" alt="">
+            </div>
+                <a class="topLink" href="./index.html">Hem</a>
+                <a class="topLink" href="./productpage.html">Produkter</a>
+                <a class="topLink" href="./contactpage.html">Kontakt</a>
+                <a class="topLink" href="" id="login">Admin</a>
+            <div class="cart-container">
+                <div class="cart-container">
+
+                    <div class="heart-icon">
+          
+                      <a class="action-buttons" onclick="openNav()">
+          
+                        <i class="fa fa-heart" aria-hidden="true"></i><span></span>
+          
+                      </a>
+          
+                    </div>
+          
+                    <div class="cart-icon">  
+          
+                      <a href="./varukorg.html" class="action-buttons">
+          
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
+          
+                      </a>
+          
+                    </div>
+          
+                  </div>
+            </div>
         </div>
         <a href="./index.html" class="topLink">Hem</a>
         <a href="./productpage.html" class="topLink">Produkter</a>
@@ -70,7 +106,7 @@
             <!--<div class="product">
               <div class="product-content">
                 <div class="product-img">
-                  <img src="./css/images/knut.JPG" alt="Produktbild" />
+                  <img class="imgUrl" src="./css/images/knut.JPG" alt="Produktbild" />
                 </div>
                 <input type="hidden" id="1">
                 <button type="button" class="btn-wish">

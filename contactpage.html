@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kontakt</title>
+    <script src="./javascript/login.js" defer></script>
     <script src="./javascript/contactpage.js" defer></script>
+    <script src="./javascript/varukorg.js" defer></script>
+    <script src="./javascript/varukorgItem.js" defer></script>
+
     <link rel="stylesheet" href="./css/main.css">
+    <script
+      src="https://kit.fontawesome.com/ad2a113bb4.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <header>
@@ -25,17 +33,39 @@
             </div>
             <div class="header-text">
                  <h2> Candle store </h2>
-                 <img class="logo" src="./css/images/candleLogo.jpg" alt="">
+                 <img class="logo" src="./images/candleLogo.jpg" alt="">
             </div>
                 <a class="topLink" href="./index.html">Hem</a>
                 <a class="topLink" href="./productpage.html">Produkter</a>
                 <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink">Admin</a>
+                <a class="topLink" href="" id="login">Admin</a>
             <div class="cart-container">
-                <a href="/wishlist.html"><img class="icons" src="./css/images/heartIcon.jpg"></a>
-                <a href="/varukorg.html"><img class="icons" src="./css/images/cart.jpg"></a>
+                <div class="cart-container">
+
+                    <div class="heart-icon">
+          
+                      <a class="action-buttons" onclick="openNav()">
+          
+                        <i class="fa fa-heart" aria-hidden="true"></i><span></span>
+          
+                      </a>
+          
+                    </div>
+          
+                    <div class="cart-icon">  
+          
+                      <a href="./varukorg.html" class="action-buttons">
+          
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
+          
+                      </a>
+          
+                    </div>
+          
+                  </div>
             </div>
         </div>
+        
     </header>
     <main class="contactPage">
         <div class="contactPageContainer">
@@ -75,6 +105,18 @@
                         <H3 class="contact-h3">ÖPPETIDER</H3>    
                         <p>Måndag–fredag 9–16</p> 
                         <p>Lördag & Söndag stängt</p>
+                        <p class="admin-text">Var god logga in för att lägga till nya produkter</p>
+                        <button class="admin-btn" id="login">Logga in</button>
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <h1 id="login-header">Administratörs inloggning:</h1>
+                                <form id="login-form">
+                                    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+                                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+                                    <input type="submit" value="Logga in" id="login-form-submit">
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>

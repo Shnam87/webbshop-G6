@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="./javascript/main.js" defer></script>
-    <script src="./javascript/cart.js" defer></script>
+    <script src="./javascript/varukorgItem.js" defer></script>
+    <script src="./javascript/varukorg.js" defer></script>
+
     <link rel="stylesheet" href="./css/main.css">
+    <script
+    src="https://kit.fontawesome.com/ad2a113bb4.js"
+    crossorigin="anonymous"
+  ></script>
 </head>
 <body>
     <header>
@@ -31,22 +37,41 @@
                 <a class="topLink" href="./index.html">Hem</a>
                 <a class="topLink" href="./productpage.html">Produkter</a>
                 <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink">Admin</a>
+                <a class="topLink" href="" id="login">Admin</a>
             <div class="cart-container">
-                <div class="cart">
-                    <a href="./wishlist.html" class="action-buttons">
-                    <i class="fa fa-heart" aria-hidden="true"></i><span>0</span>
-                    </a>
-                </div>
-                <a href="./varukorg.html" class="action-buttons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <div class="cart-container">
+
+                    <div class="heart-icon">
+          
+                      <a class="action-buttons" onclick="openNav()">
+          
+                        <i class="fa fa-heart" aria-hidden="true"></i><span></span>
+          
+                      </a>
+          
+                    </div>
+          
+                    <div class="cart-icon">  
+          
+                      <a href="./varukorg.html" class="action-buttons">
+          
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
+          
+                      </a>
+          
+                    </div>
+          
+                  </div>
             </div>
         </div>
+        
     </header>
     <main>
         <div class="cart-flex">
         <h2>Slutför din beställning</h2>
             <div class="cart-box">
                 <h2>Din varukorg</h2>
+                <div class="cart-items"></div>
             </div>
             <div class="cart-products-container">
                 <div class="cart-product-header">
