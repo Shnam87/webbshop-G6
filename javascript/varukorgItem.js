@@ -8,19 +8,24 @@ function displayCartItems() {
     //cartItems_Element.innerHTML = "";
     cartItems.forEach(item => {
         cartItems_Element.innerHTML += `
+        <hr class="avskiljare">
             <div class="cart-item">
             <img class="imgCart" src="${item.prodImg}" alt="${item.name}">
                 <h4 class="item-name">${item.name}</h4>
-                <button onclick="removeProduct()">Ta bort produkt</button>
-                <h4 class="item-price">${item.price} SEK
+                
+
+                <h4 class="item-price">${item.price * 0.75}:-
                 </h4>
+               <button class="removeButton"> <i class="fas fa-trash"></i></buttton>
             </div>
+           
         `;
     });
 
 
 }
 
+/*
 function removeProduct() {
     var removeName = document.querySelector(".item-name");
     var removePrice = document.querySelector(".item-price");
@@ -29,19 +34,22 @@ function removeProduct() {
     window.localStorage.removeItem("myCart");
   }
 
+   <button onclick="removeProduct()">Ta bort produkt</button>
+*/
   var totalSumma = 0;
 
 
   function totalCost() {
     //cartItems_Element.innerHTML = "";
     cartItems.forEach(item => {
-        totalSumma = totalSumma += item.price
+        totalSumma = totalSumma += item.price * 0.75
      
 console.log(totalSumma)
     });
 
     cartItems_Element.innerHTML += `
-    <p class="totalSumma">Din totala kostnad är ${totalSumma} Kr</p>
+    <hr class="avskiljare">
+    <p class="totalSumma">Pris för produkter ${totalSumma}:-</p>
     `
 
 }
@@ -49,6 +57,7 @@ console.log(totalSumma)
 
 displayCartItems();
 totalCost();
+
 
 
 

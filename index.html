@@ -34,27 +34,39 @@
             </div>
             <div class="header-text">
                  <h2> Candle store </h2>
-                 <img class="logo" src="./css/images/candleLogo.jpg" alt="">
+                 <img class="logo" src="./images/candleLogo.jpg" alt="">
             </div>
                 <a class="topLink" href="./index.html">Hem</a>
                 <a class="topLink" href="./productpage.html">Produkter</a>
                 <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink" href="" id="login">Admin</a>
+                <a class="topLink" href="./admin.html" id="login">Admin</a>
             <div class="cart-container">
-                <a href="./wishlist.html" class="action-buttons"><i class="fa fa-heart" aria-hidden="true"></i></a>
-                <a href="./varukorg.html" class="action-buttons"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                <div class="cart-container">
+
+                    <div class="heart-icon">
+          
+                      <a class="action-buttons" onclick="openNav()">
+          
+                        <i class="fa fa-heart" aria-hidden="true"></i><span></span>
+          
+                      </a>
+          
+                    </div>
+          
+                    <div class="cart-icon">  
+          
+                      <a href="./varukorg.html" class="action-buttons">
+          
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
+          
+                      </a>
+          
+                    </div>
+          
+                  </div>
             </div>
         </div>
-        <div id="myModal" class="modal">
-            <div class="modal-content">
-                <h1 id="login-header">Login</h1>
-                <form id="login-form">
-                    <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-                    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-                    <input type="submit" value="Login" id="login-form-submit">
-                </form>
-            </div>
-        </div>
+        
     </header>
     <main>
         <div class="hero-container">

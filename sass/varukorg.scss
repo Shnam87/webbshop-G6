@@ -1,5 +1,7 @@
 .cart-flex {
     padding: 3vw;
+    background-color:  #f3eae2;
+    
 }
 
 .cart-box {
@@ -10,18 +12,21 @@ display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 min-width: 60vw;
-min-height: 30vw;
+height: auto;
 }
 
-.rubriker {
-   
-    background-color: black;
-    color: pink; 
-}   
+
 
 .cart-item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    margin-top: 2vw;
+}
+
+.avskiljare {
+    margin-top: 2vw;
 }
 
 h2 {
@@ -30,7 +35,7 @@ font-size: 2.5vw;
 }
 
 h4 {
-    font-size: 2vw;
+    font-size: 1vw;
 }
 
 .item-name {
@@ -40,10 +45,47 @@ h4 {
 .totalSumma {
     font-weight: bold;
     margin-top: 4vw;
+    font-size: 1.5vw;
+
 }
 
 .imgCart {
-    width: 4vw;
+    width: 6vw;
     height: auto;
+    transition: 0.5s;
+}
+.imgCart:hover {
+    transform: scale(1.6);
+}
+
+.removeButton {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+.varuCount {
+    font-size: 1vw;
+    position: absolute; 
+    top: 0.3vw;
+    right: 0.3vw;
+    background-color: black;
+    color: white;
+    width: 1.2vw;
+    height: 1.2vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fa {
+    font-size: 2vw;
 }
 
