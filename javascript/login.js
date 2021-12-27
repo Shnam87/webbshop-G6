@@ -16,7 +16,7 @@ function checkLogin(e) {
 }
 
 function openModal(e) {
-    e.preventDefault();
+   // e.preventDefault();
     
     var modal = document.getElementById("myModal");
     modal.style.display = "block";
