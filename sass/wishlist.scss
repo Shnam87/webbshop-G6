@@ -37,8 +37,8 @@
 .heart-icon span{
     font-size: 1vw;
     position: absolute;
-    top: 0.3vw;
-    right: 0.3vw;
+    top: 0.6vw;
+    right: 0vw;
     background-color: black;
     color: white;
     width: 1.2vw;
@@ -48,6 +48,8 @@
     justify-content: center;
     align-items: center;
 }
+
+
 
 .favorite-item{
   padding: 8px 8px 8px 10px;
@@ -106,3 +108,11 @@
   .sidenav a {font-size: 18px;}
 }
 
+@media screen and (max-width: 660px) {
+.heart-icon span{
+  font-size: 2vw;
+            width: 2vw;
+            height: 2vw;
+}
+
+}

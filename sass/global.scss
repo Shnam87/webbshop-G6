@@ -139,8 +139,7 @@
 }
 .action-buttons{
     color: $text;
-    margin: 12px;
-    font-size: 28px;
+
 }
 
 .cart-button:hover {
@@ -168,15 +167,25 @@
 
 .hero-text {
     position: absolute;
-    text-align: center;
+    text-align: left;
     color: white;
-    font-size: 42px;
+    font-size: 2vw;
     font-family: 'Playfair Display', serif;
-    top: 280px;
-    left: 430px;
+    top: 30%;
+    left: 8%;
+    width: 30%;
 }
 .hero-text h1, .hero-text h4 {
-    background-color: rgba(243,234,226, 0.3);
+    background-color: rgba(63, 61, 61, 0.459);
+    padding: 2%;
+    
+}
+
+@media screen and (max-width: 660px) {
+    .hero-text{
+        font-size: 4vw;
+        width: 60%;
+    }
 }
 
 .card-container {
@@ -210,15 +219,15 @@
     position: absolute;
     width: 130px;
     height: 110px;
-    margin-top: 15vh;
+    margin-top: 25%;
     left: 22px;
     color: white;
-    background-color: rgba(243,234,226, 0.3);
+    background-color: rgba(67, 68, 67, 0.562);
 }
 .card-text h4 {
     position: relative;
     left: 15px;
-    top: 7px;
+    top: 10%;
     font-size: 25px;
     width: 100px;
     text-align: center;
@@ -231,7 +240,7 @@
     padding: 10px;
     width: 110px;
     margin-top: -137px;
-    background-color: rgba(203, 243, 206, 0.3);
+    background-color: rgba(67, 68, 67, 0.562);
 }
 
 
