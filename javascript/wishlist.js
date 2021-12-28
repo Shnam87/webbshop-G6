@@ -74,13 +74,13 @@ function remove (product){
 
 function openNav() {
     document.getElementById("mySidenav").style.width = "300px";
-    document.querySelector("body").style.marginRight = "300px";
+    //document.querySelector("body").style.marginRight = "300px";
     //document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
   
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.querySelector("body").style.marginRight= "0";
+    //document.querySelector("body").style.marginRight= "0";
     //document.body.style.backgroundColor = "white";
 }
 
