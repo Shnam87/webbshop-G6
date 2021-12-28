@@ -5,8 +5,19 @@
     margin: 0px;
 }
 
+.info-box{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    font-size: 12px;
+    text-align: center;
+    background-color: $mainColor-linen;
+    color: $text;
+    padding: 8px;
+}
+
 .header {
-    position: relative;
+   //position: relative;
     display: flex;
     width: 100%;
     height: 5.4vw;
@@ -34,7 +45,7 @@
     margin-top: 10px;
 }
  .menu-button {
-    background-color: #000000;
+    background-color: $mainColor-linen;
     padding: 2vw;
     border: none;
     cursor: pointer;
@@ -55,7 +66,6 @@
     left: 65px;
     display: none;
     font-family: 'Open Sans', sans-serif;
-    border: 1px solid violet;
 }
 @media screen and (max-width: 660px){
     .dropdown-menu {
@@ -114,7 +124,6 @@
     text-decoration: none;
 }
 
-
 .cart-container {
     display: flex;
     align-items: center;
@@ -131,7 +140,6 @@
     font-size: 28px;
 }
 
-
 .cart-button:hover {
     cursor: pointer;
 } 
@@ -139,10 +147,11 @@
 .hero-container {
     position: relative;
     width: 100%;
-    height: 500px;
+    height: 700px;
 }
 
 .image-container{
+    background-color: $mainColor-linen;
     height: 100%;
     width: 100%;  
 }
@@ -155,16 +164,22 @@
 
 .hero-text {
     position: absolute;
-    top: 40%;
-    left: 8%;
+    text-align: center;
     color: white;
-    background-color: rgb(243,234,226);
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    top: 280px;
+    left: 430px;
+}
+.hero-text h1, .hero-text h4 {
+    background-color: rgba(243,234,226, 0.3);
 }
 
 .card-container {
     display: flex;
     justify-content: space-between;
     height: 320px;
+    margin-top: -5px;
     // font-family: 'Open Sans', sans-serif;
 }
 
@@ -184,18 +199,15 @@
 .right {
     background-image: $rightImage;
     background-size: cover;
-    background-attachment: fixed;
-    background-position: 470px -980px;
-    // background-position: 720px -300px;
+    background-position: center;
 }
 
  .card-text {
     position: absolute;
-    left: 3%;
     width: 130px;
-    height: 140px;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    height: 110px;
+    margin-top: 15vh;
+    left: 22px;
     color: white;
     background-color: rgba(243,234,226, 0.3);
 }
@@ -209,14 +221,13 @@
 } 
 
 .card-text p{
+    position: relative;
     color: white;
-    position: absolute;
-    font-size: 20px;
-    top: -30px;
-    left: -21px;
+    font-size: 15px;
     padding: 10px;
-    background-color: rgba(243,234,226, 0.3);
-    writing-mode: vertical-lr;
+    width: 110px;
+    margin-top: -137px;
+    background-color: rgba(203, 243, 206, 0.3);
 }
 
 
@@ -224,8 +235,10 @@
 
 .footer{
     position: relative;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
     margin-top: 10px;
+    color: $text;
 }
 
 .footer-container{
@@ -249,11 +262,11 @@
 
 
 
-
+/* 
 
 main {
     background-color: $mainColor-linen;
-}
+} */
 
 .cart-flex {
     display: flex;
