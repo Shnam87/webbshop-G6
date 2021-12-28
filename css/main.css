@@ -707,6 +707,9 @@ body {
   min-width: 60vw;
   height: auto; }
 
+#trash-btn {
+  font-size: 1.5vw; }
+
 .cart-item {
   display: flex;
   justify-content: space-between;
@@ -724,10 +727,12 @@ body {
   font-size: 1vw; }
 
 .item-name {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.5vw; }
 
 .item-price {
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.5vw; }
 
 .totalSumma {
   font-weight: bold;
