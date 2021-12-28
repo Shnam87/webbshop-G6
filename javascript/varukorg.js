@@ -38,7 +38,7 @@ addnum();
 
 function addnum () {
 const list = JSON.parse(localStorage.getItem("myCart"))
-    document.querySelector(".cart-icon div").textContent = list.length
+    document.querySelector(".cart-icon div").textContent = list.length 
 
    
 

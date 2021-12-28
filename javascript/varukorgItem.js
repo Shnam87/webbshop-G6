@@ -14,9 +14,9 @@ function displayCartItems() {
                 <p class="item-name">${item.name}<p>
                 
 
-                <p class="item-price">${item.price * 0.75}:-
+                <p class="item-price">${item.price * 0.75} kr
                 </p>
-               <button class="removeButton"> <i class="fas fa-trash"></i></buttton>
+               <button class="removeButton"> <i id="trash-btn" class="fas fa-trash"></i></buttton>
             </div>
            
         `;
@@ -49,7 +49,7 @@ console.log(totalSumma)
 
     cartItems_Element.innerHTML += `
     <hr class="avskiljare">
-    <p class="totalSumma">Pris för produkter ${totalSumma}:-</p>
+    <p class="totalSumma">Pris för produkter ${totalSumma} kr</p>
     `
 
 }
