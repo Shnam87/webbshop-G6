@@ -16,7 +16,7 @@ function displayCartItems() {
 
                 <p class="item-price">${item.price * 0.75} kr
                 </p>
-               <button class="removeButton"> <i class="fas fa-trash"></i></buttton>
+               <button class="removeButton"> <i id="trash-btn" class="fas fa-trash"></i></buttton>
             </div>
            
         `;

@@ -15,8 +15,9 @@ min-width: 60vw;
 height: auto;
 }
 
-
-
+#trash-btn{
+    font-size: 1.5vw;
+}
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -39,11 +40,15 @@ font-size: 2.5vw;
 
 .item-name {
     font-weight: bold;
+    font-size: 1.5vw;
 }
 
 .item-price {
     font-weight: bold;
+    font-size: 1.5vw;
 }
+
+
 
 .totalSumma {
     font-weight: bold;
