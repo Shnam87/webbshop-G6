@@ -41,11 +41,14 @@ font-size: 2.5vw;
     font-weight: bold;
 }
 
+.item-price {
+    font-weight: bold;
+}
+
 .totalSumma {
     font-weight: bold;
     margin-top: 4vw;
     font-size: 1.5vw;
-
 }
 
 .imgCart {
@@ -89,3 +92,34 @@ font-size: 2.5vw;
     font-size: 2vw;
 }
 
+@media screen and (max-width: 660px) {
+    .cart-box {
+      width: 100%;
+    }
+    .item-name {
+        font-size: 3vw;
+    }
+    .item-price {
+        font-size: 3vw;
+    }
+    .imgCart {
+        width: 10vw;
+        height: auto;
+    }
+    .totalSumma {
+        font-weight: bold;
+        margin-top: 4vw;
+        font-size: 2.5vw;
+    }
+    h2 {
+        font-size: 3vw;
+        }
+        .fa {
+            font-size: 3.7vw;
+        }
+        .varuCount {
+            font-size: 2vw;
+            width: 2vw;
+            height: 2vw;
+        }
+  }

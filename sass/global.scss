@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-} 
+}
 
 .info-box{
     position: sticky;
@@ -23,8 +23,8 @@
     height: 9vw;
     justify-content: center;
     align-items: center;
-    //font-size: 1.4vw;
-} 
+    font-size: 1.4vw;
+}
 
 .header-text {
     display: flex;
@@ -139,7 +139,7 @@
 }
 .action-buttons{
     color: $text;
-    margin: 1vw;
+    margin: 12px;
     font-size: 28px;
 }
 

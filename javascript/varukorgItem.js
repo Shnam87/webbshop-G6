@@ -11,11 +11,11 @@ function displayCartItems() {
         <hr class="avskiljare">
             <div class="cart-item">
             <img class="imgCart" src="${item.prodImg}" alt="${item.name}">
-                <h4 class="item-name">${item.name}</h4>
+                <p class="item-name">${item.name}<p>
                 
 
-                <h4 class="item-price">${item.price * 0.75}:-
-                </h4>
+                <p class="item-price">${item.price * 0.75}:-
+                </p>
                <button class="removeButton"> <i class="fas fa-trash"></i></buttton>
             </div>
            
