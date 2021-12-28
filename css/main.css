@@ -7,7 +7,7 @@
   position: sticky;
   top: 0px;
   z-index: 1;
-  font-size: 1.4vw;
+  font-size: 1vw;
   text-align: center;
   background-color: #f3eae2;
   color: #5c5c5c;
@@ -67,7 +67,7 @@
 
 @media screen and (max-width: 600px) {
   .info-box {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 600; }
   .header-text h2 {
     font-size: 7vw;
