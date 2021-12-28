@@ -10,7 +10,7 @@
   font-size: 12px;
   text-align: center;
   background-color: #f3eae2;
-  color: #747474;
+  color: #5c5c5c;
   padding: 8px; }
 
 .header {
@@ -32,7 +32,7 @@
 .header-text h2 {
   font-size: 4vw;
   font-weight: 400;
-  color: #747474;
+  color: #5c5c5c;
   letter-spacing: 3px; }
 
 .logo {
@@ -97,7 +97,7 @@
 .topLink {
   margin: 15px;
   text-decoration: none;
-  color: #747474;
+  color: #5c5c5c;
   font-size: 2vw; }
 
 .topLink:link {
@@ -121,7 +121,7 @@
   height: 4vw; }
 
 .action-buttons {
-  color: #747474;
+  color: #5c5c5c;
   margin: 12px;
   font-size: 28px; }
 
@@ -145,9 +145,12 @@
 
 .hero-text {
   position: absolute;
+  text-align: center;
   color: white;
   font-size: 42px;
-  font-family: 'Playfair Display', serif; }
+  font-family: 'Playfair Display', serif;
+  top: 280px;
+  left: 430px; }
 
 .hero-text h1, .hero-text h4 {
   background-color: rgba(243, 234, 226, 0.3); }
@@ -195,8 +198,7 @@
   position: relative;
   color: white;
   font-size: 15px;
-  top: -30px;
-  left: -21px;
+  padding: 10px;
   width: 110px;
   margin-top: -137px;
   background-color: rgba(203, 243, 206, 0.3); }
@@ -204,8 +206,10 @@
 /*---------------FOOTER-------------------*/
 .footer {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
-  margin-top: 10px; }
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-top: 10px;
+  color: #5c5c5c; }
 
 .footer-container {
   display: flex;
@@ -219,6 +223,11 @@
   height: 30px;
   margin: 5px; }
 
+/* 
+
+main {
+    background-color: $mainColor-linen;
+} */
 .cart-flex {
   display: flex;
   flex-direction: column;
@@ -399,7 +408,7 @@ body {
   font-weight: 500;
   text-align: center;
   padding: 1.3rem 0;
-  color: #747474; }
+  color: #5c5c5c; }
 
 .md-title {
   font-size: 2rem;
@@ -408,7 +417,7 @@ body {
 .product-info-top .sm-title {
   font-weight: 100;
   font-size: 1rem;
-  color: #747474;
+  color: #5c5c5c;
   padding: 0.6rem 0; }
 
 .text-light {
@@ -417,7 +426,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
-  color: #747474;
+  color: #5c5c5c;
   margin: auto; }
 
 /* Product section */
