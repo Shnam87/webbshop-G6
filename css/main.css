@@ -3,14 +3,22 @@
   box-sizing: border-box;
   margin: 0px; }
 
+.info-box {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  font-size: 12px;
+  text-align: center;
+  background-color: #f3eae2;
+  color: #747474;
+  padding: 8px; }
+
 .header {
-  position: relative;
   display: flex;
   width: 100%;
-  height: 5.4vw;
+  height: 9vw;
   justify-content: center;
-  align-items: center;
-  font-size: 1.4vw; }
+  align-items: center; }
 
 .header-text {
   display: flex;
@@ -21,17 +29,19 @@
   justify-content: center; }
 
 .header-text h2 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 400;
   color: #747474;
   letter-spacing: 3px; }
 
 .logo {
-  height: 4.5vw;
+  display: inline-block;
+  height: 5vw;
+  margin-left: -12px;
   margin-top: 10px; }
 
 .menu-button {
-  background-color: #000000;
+  background-color: #f3eae2;
   padding: 2vw;
   border: none;
   cursor: pointer;
@@ -51,8 +61,7 @@
   position: absolute;
   left: 65px;
   display: none;
-  font-family: 'Open Sans', sans-serif;
-  border: 1px solid violet; }
+  font-family: 'Open Sans', sans-serif; }
 
 @media screen and (max-width: 660px) {
   .dropdown-menu {
@@ -87,7 +96,8 @@
 .topLink {
   margin: 15px;
   text-decoration: none;
-  color: #747474; }
+  color: #747474;
+  font-size: 2vw; }
 
 .topLink:link {
   cursor: pointer; }
@@ -111,7 +121,8 @@
 
 .action-buttons {
   color: #747474;
-  margin: 1vw; }
+  margin: 1vw;
+  font-size: 28px; }
 
 .cart-button:hover {
   cursor: pointer; }
@@ -119,9 +130,10 @@
 .hero-container {
   position: relative;
   width: 100%;
-  height: 500px; }
+  height: 550px; }
 
 .image-container {
+  background-color: #f3eae2;
   height: 100%;
   width: 100%; }
 
@@ -132,15 +144,18 @@
 
 .hero-text {
   position: absolute;
-  top: 40%;
-  left: 8%;
   color: white;
-  background-color: #f3eae2; }
+  font-size: 42px;
+  font-family: 'Playfair Display', serif; }
+
+.hero-text h1, .hero-text h4 {
+  background-color: rgba(243, 234, 226, 0.3); }
 
 .card-container {
   display: flex;
   justify-content: space-between;
-  height: 320px; }
+  height: 320px;
+  margin-top: -5px; }
 
 .startCard {
   position: relative;
@@ -149,23 +164,21 @@
   margin-top: 10px; }
 
 .left {
-  background-image: url(./images/pyramidochknut.jpg);
+  background-image: url(/css/images/pyramidochknut.JPG);
   background-size: cover;
   background-position: center; }
 
 .right {
-  background-image: url(./images/pastellbubblormini.jpg);
+  background-image: url(/css/images/pastellbubblormini.JPG);
   background-size: cover;
-  background-attachment: fixed;
-  background-position: 470px -980px; }
+  background-position: center; }
 
 .card-text {
   position: absolute;
-  left: 3%;
   width: 130px;
-  height: 140px;
-  margin-bottom: 30px;
-  margin-top: 30px;
+  height: 110px;
+  margin-top: 15vh;
+  left: 22px;
   color: white;
   background-color: rgba(243, 234, 226, 0.3); }
 
@@ -178,14 +191,14 @@
   text-align: center; }
 
 .card-text p {
+  position: relative;
   color: white;
-  position: absolute;
-  font-size: 20px;
+  font-size: 15px;
   top: -30px;
   left: -21px;
-  padding: 10px;
-  background-color: rgba(243, 234, 226, 0.3);
-  writing-mode: vertical-lr; }
+  width: 110px;
+  margin-top: -137px;
+  background-color: rgba(203, 243, 206, 0.3); }
 
 /*---------------FOOTER-------------------*/
 .footer {
@@ -204,9 +217,6 @@
 .mediaIcon {
   height: 30px;
   margin: 5px; }
-
-main {
-  background-color: #f3eae2; }
 
 .cart-flex {
   display: flex;
@@ -676,10 +686,10 @@ body {
 .avskiljare {
   margin-top: 2vw; }
 
-h2 {
+.cart-flex h2 {
   font-size: 2.5vw; }
 
-h4 {
+.cart-item h4 {
   font-size: 1vw; }
 
 .item-name {
@@ -730,7 +740,7 @@ h4 {
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 5.4vw;
+  top: 0;
   right: 0;
   background-color: white;
   overflow-x: hidden;
@@ -749,6 +759,25 @@ h4 {
   width: 100%;
   margin-top: 5%;
   padding: 10px; }
+
+.heart-icon {
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.heart-icon span {
+  font-size: 1vw;
+  position: absolute;
+  top: 0.3vw;
+  right: 0.3vw;
+  background-color: black;
+  color: white;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .favorite-item {
   padding: 8px 8px 8px 10px;

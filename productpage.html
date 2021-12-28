@@ -32,53 +32,41 @@
   <body>
     <!--Header börjar-->
     <header>
-        <div class="header">
-            <div class="dropdown-menu">
-                <button class="menu-button">
-                    <div class="link"></div>
-                    <div class="link"></div>
-                    <div class="link"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#hem">Hem</a>
-                    <a href="./productpage.html">Produkter</a>
-                    <a href="#kontakt">Kontakt</a>
-                </div>
+      <div class="info-box">
+        <p>ALLTID FRI LEVERANS SAMT FRIA RETURER</p>
+      </div>
+      <div class="header">
+          <div class="dropdown-menu">
+              <button class="menu-button">
+                  <div class="link"></div>
+                  <div class="link"></div>
+                  <div class="link"></div>
+              </button>
+              <div class="dropdown-content">
+                  <a href="#hem">Hem</a>
+                  <a href="./productpage.html">Produkter</a>
+                  <a href="#kontakt">Kontakt</a>
+              </div>
+          </div>
+          <div class="header-text">
+            <h2> Candle store </h2>
+            <img class="logo" src="./images/candleLogo.jpg" alt="">
+          </div>
+          <a class="topLink" href="./index.html">Hem</a>
+          <a class="topLink" href="./productpage.html">Produkter</a>
+          <a class="topLink" href="./contactpage.html">Kontakt</a>
+          <div class="cart-container">
+            <div class="heart-icon">
+              <a class="action-buttons" onclick="openNav()">
+                <i class="fa fa-heart" aria-hidden="true"></i><span></span>
+              </a>
             </div>
-            <div class="header-text">
-                 <h2> Candle store </h2>
-                 <img class="logo" src="./images/candleLogo.jpg" alt="">
+            <div class="cart-icon">  
+              <a href="./varukorg.html" class="action-buttons">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
+              </a>
             </div>
-                <a class="topLink" href="./index.html">Hem</a>
-                <a class="topLink" href="./productpage.html">Produkter</a>
-                <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink" href="" id="login">Admin</a>
-            <div class="cart-container">
-                <div class="cart-container">
-
-                    <div class="heart-icon">
-          
-                      <a class="action-buttons" onclick="openNav()">
-          
-                        <i class="fa fa-heart" aria-hidden="true"></i><span></span>
-          
-                      </a>
-          
-                    </div>
-          
-                    <div class="cart-icon">  
-          
-                      <a href="./varukorg.html" class="action-buttons">
-          
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
-          
-                      </a>
-          
-                    </div>
-          
-                  </div>
-            </div>
-        </div>
+          </div>
       </div>
     </header>
     <!--Header slut-->
@@ -346,8 +334,6 @@
         </div>
         <button class="btn-load">Ladda mer</button>
       </div>
-
-
       <aside id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2 class="favorite-h2">Favoriter</h2>
@@ -356,34 +342,32 @@
             <!--------Lista med proudukter--------->
         </ul>  
       </aside>
-      <!--Product page slutar-->
-
-
-
-      <!--Footer börjar-->
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="socialMedia-container">
-            <p>Följ oss på sociala medier:</p>
-            <a href="https://www.instagram.com/studioanahita.se/"
-              ><img
-                class="mediaIcon"
-                src="./css/images/instagram_icon.png"
-                alt="instagram"
-            /></a>
-            <a href="https://sv-se.facebook.com/medieinstitutet/"
-              ><img
-                class="mediaIcon"
-                src="./css/images/facebook_icon_black.png"
-                alt="facebook"
-            /></a>
-          </div>
-          <div class="copyright-div">
-            <p class="copyright-text">&copy; 2021 Grupp 6</p>
-          </div>
-        </div>
-      </footer>
-      <!--Footer slutar-->
     </main>
+    <!--Product page slutar-->
+    <!--Footer börjar-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="socialMedia-container">
+          <p>Följ oss på sociala medier:</p>
+          <a href="https://www.instagram.com/studioanahita.se/"
+            ><img
+              class="mediaIcon"
+              src="./css/images/instagram_icon.png"
+              alt="instagram"
+          /></a>
+          <a href="https://sv-se.facebook.com/medieinstitutet/"
+            ><img
+              class="mediaIcon"
+              src="./css/images/facebook_icon_black.png"
+              alt="facebook"
+          /></a>
+        </div>
+        <div class="copyright-div">
+          <p class="copyright-text">&copy; 2021 Grupp 6</p>
+        </div>
+      </div>
+    </footer>
+      <!--Footer slutar-->
+    
   </body>
 </html>
