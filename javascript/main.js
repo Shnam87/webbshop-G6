@@ -2,9 +2,6 @@
 
 const numImagesAvailable = 258  //how many photos are total in the collection
 const numItemsToGenerate = 1; //how many photos you want to display
-/*
-const numImagesAvailable = 258  //Photos in collection
-const numItemsToGenerate = 1; 
 const collectionID = 460091  //Collection ID
 const ImageContainer = document.querySelector(".image-container")
 

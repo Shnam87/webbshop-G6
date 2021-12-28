@@ -16,7 +16,7 @@
 .header {
   display: flex;
   width: 100%;
-  height: 5.4vw;
+  height: 9vw;
   justify-content: center;
   align-items: center;
   font-size: 1.4vw; }
@@ -30,13 +30,15 @@
   justify-content: center; }
 
 .header-text h2 {
-  font-size: 3vw;
+  font-size: 4vw;
   font-weight: 400;
   color: #5c5c5c;
   letter-spacing: 3px; }
 
 .logo {
-  height: 4.5vw;
+  display: inline-block;
+  height: 5vw;
+  margin-left: -12px;
   margin-top: 10px; }
 
 .menu-button {
@@ -95,7 +97,8 @@
 .topLink {
   margin: 15px;
   text-decoration: none;
-  color: #5c5c5c; }
+  color: #5c5c5c;
+  font-size: 2vw; }
 
 .topLink:link {
   cursor: pointer; }
@@ -128,7 +131,7 @@
 .hero-container {
   position: relative;
   width: 100%;
-  height: 700px; }
+  height: 550px; }
 
 .image-container {
   background-color: #f3eae2;
@@ -165,12 +168,12 @@
   margin-top: 10px; }
 
 .left {
-  background-image: url(./images/pyramidochknut.jpg);
+  background-image: url(/css/images/pyramidochknut.JPG);
   background-size: cover;
   background-position: center; }
 
 .right {
-  background-image: url(./images/pastellbubblormini.jpg);
+  background-image: url(/css/images/pastellbubblormini.JPG);
   background-size: cover;
   background-position: center; }
 
@@ -700,11 +703,11 @@ body {
 .avskiljare {
   margin-top: 2vw; }
 
-h2 {
+.cart-flex h2 {
   font-size: 2.5vw; }
 
-p {
-  font-size: 1.1vw; }
+.cart-item h4 {
+  font-size: 1vw; }
 
 .item-name {
   font-weight: bold; }
@@ -780,7 +783,7 @@ p {
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 5.4vw;
+  top: 0;
   right: 0;
   background-color: white;
   overflow-x: hidden;
@@ -799,6 +802,25 @@ p {
   width: 100%;
   margin-top: 5%;
   padding: 10px; }
+
+.heart-icon {
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.heart-icon span {
+  font-size: 1vw;
+  position: absolute;
+  top: 0.3vw;
+  right: 0.3vw;
+  background-color: black;
+  color: white;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .favorite-item {
   padding: 8px 8px 8px 10px;
