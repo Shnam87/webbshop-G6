@@ -32,52 +32,38 @@
   <body>
     <!--Header börjar-->
     <header>
-        <div class="header">
-            <div class="dropdown-menu">
-                <button class="menu-button">
-                    <div class="link"></div>
-                    <div class="link"></div>
-                    <div class="link"></div>
-                </button>
-                <div class="dropdown-content">
-                    <a href="#hem">Hem</a>
-                    <a href="./productpage.html">Produkter</a>
-                    <a href="#kontakt">Kontakt</a>
-                </div>
-            </div>
-            <div class="header-text">
-                 <h2> Candle store </h2>
-                 <img class="logo" src="./images/candleLogo.jpg" alt="">
-            </div>
-                <a class="topLink" href="./index.html">Hem</a>
-                <a class="topLink" href="./productpage.html">Produkter</a>
-                <a class="topLink" href="./contactpage.html">Kontakt</a>
-                <a class="topLink" href="" id="login">Admin</a>
-            <div class="cart-container">
-                <div class="cart-container">
-
-                    <div class="heart-icon">
-          
-                      <a class="action-buttons" onclick="openNav()">
-          
-                        <i class="fa fa-heart" aria-hidden="true"></i><span></span>
-          
-                      </a>
-          
-                    </div>
-          
-                    <div class="cart-icon">  
-          
-                      <a href="./varukorg.html" class="action-buttons">
-          
-                        <i class="fa fa-shopping-cart" aria-hidden="true"></i><div class="varuCount"></div>
-          
-                      </a>
-          
-                    </div>
-          
-                  </div>
-            </div>
+      <div class="header">
+        <div class="dropdown-menu">
+          <button class="menu-button">
+            <div class="link"></div>
+            <div class="link"></div>
+            <div class="link"></div>
+          </button>
+          <div class="dropdown-content">
+            <a href="./index.html">Hem</a>
+            <a href="./productpage.html">Produkter</a>
+            <a href="./contactpage.html">Kontakt</a>
+          </div>
+        </div>
+        <div class="header-text">
+          <h2>Candle store</h2>
+        </div>
+        <a href="./index.html" class="topLink">Hem</a>
+        <a href="./productpage.html" class="topLink">Produkter</a>
+        <a href="./contactpage.html" class="topLink">Kontakt</a>
+        <div class="cart-container">
+          <div class="heart-icon">
+            <a class="action-buttons" onclick="openNav()">
+              <i class="fa fa-heart" aria-hidden="true"></i><span></span>
+            </a>
+          </div>
+          <div class="cart-icon">
+            <a href="./varukorg.html" class="action-buttons">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <div class="varuCount">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </header>
@@ -92,7 +78,7 @@
           </p>
           <div class="product-items">
             <!--En produkt-->
-            <!--<div class="product">
+            <div class="product">
               <div class="product-content">
                 <div class="product-img">
                   <img class="imgUrl" src="./css/images/knut.JPG" alt="Produktbild" />
@@ -117,7 +103,6 @@
                 <h2 class="sm-title">25% rabatt</h2>
               </div>
             </div>
-          -->
             <!--Slut på en produkt-->
 
             <!--Produkt genom localStorage-->
@@ -341,13 +326,10 @@
               </div>
             </div>
             <--Slut produkt 9-->
-              
           </div>
         </div>
         <button class="btn-load">Ladda mer</button>
       </div>
-
-
       <aside id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2 class="favorite-h2">Favoriter</h2>
@@ -357,9 +339,6 @@
         </ul>  
       </aside>
       <!--Product page slutar-->
-
-
-
       <!--Footer börjar-->
       <footer class="footer">
         <div class="footer-container">

@@ -111,7 +111,8 @@
 
 .action-buttons {
   color: #747474;
-  margin: 1vw; }
+  margin: 12px;
+  font-size: 28px; }
 
 .cart-button:hover {
   cursor: pointer; }
@@ -328,6 +329,10 @@ main {
   margin-left: 10%;
   padding: 1rem; }
 
+.admin-header {
+  font-size: 26px;
+  font-weight: 800; }
+
 .adminForm-label {
   box-sizing: border-box;
   font-size: 18px;
@@ -352,8 +357,12 @@ main {
   margin: 0.7rem 0.3rem; }
 
 @media screen and (max-width: 550px) {
+  .adminForm {
+    background-image: none; }
   .admin-header {
-    margin: 0.7rem; }
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0.5rem; }
   .adminForm-input {
     width: 95%; } }
 
