@@ -6,6 +6,7 @@
     margin: 3% 25%;
     border-radius: 25px;
     font-size: 24px;
+    cursor: pointer;
 }
 
 .modal {
@@ -22,7 +23,7 @@
     background-color: rgba(0,0,0,0.9);
 }
   
-.modal-content {
+.buy-modal-content{
     background-color: #f3eae2;
     background-image: $confirmedBuy;
     background-size: 125px;

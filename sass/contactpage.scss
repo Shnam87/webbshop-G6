@@ -26,6 +26,9 @@
     padding-bottom: 2rem;
 }
 
+.contact-h2, .contact-h3{
+    font-family: $rubrik;
+}
 
 
 .aboutContainer{
@@ -34,6 +37,10 @@
     font-family: $main-text;
     text-align: center;
     box-sizing: border-box;
+}
+
+.aboutContainer h2{
+    font-family: $rubrik;
 }
 
 .contactSection{
@@ -87,6 +94,7 @@
 
 #contactForm-h2{
     text-align: center;
+    font-family: $rubrik;
 }
 
 .submitted{
