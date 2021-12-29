@@ -9,6 +9,7 @@
     <script src="./javascript/varukorgItem.js" defer></script>
     <script src="./javascript/varukorg.js" defer></script>
     <script src="./javascript/wishlist.js" defer></script>
+    <script src="./javascript/buy.js" defer></script>
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://kit.fontawesome.com/ad2a113bb4.js" crossorigin="anonymous" defer></script>
     <!---------Google Fonts--------->
@@ -59,6 +60,13 @@
             <div class="cart-box">
                 <h2>Din varukorg</h2>
                 <div class="cart-items"></div>
+                <button class="buy-btn" id="buy">Köp Nu</button>
+                <div id="buyModal" class="modal">
+                    <div class="modal-content">
+                        <p class="buy-header">Tack för din beställning</p>
+                        <p class="buy-text">Din order har bekräftats</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
