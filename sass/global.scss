@@ -9,7 +9,7 @@
     position: sticky;
     top: 0px;
     z-index: 1;
-    font-size: 1.4vw;
+    font-size: 1vw;
     text-align: center;
     background-color: $mainColor-linen;
     color: $text;
@@ -76,7 +76,7 @@
 }
 @media screen and (max-width: 600px){
     .info-box{
-        font-size: 3vw;
+        font-size: 2vw;
         font-weight: 600;
     }
     

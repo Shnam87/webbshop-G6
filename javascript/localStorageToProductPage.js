@@ -27,8 +27,8 @@ function displayInfo() {
                     <div class="product-info-top">
                         <h2 class="sm-title">${product.description}</h2>
                     </div>
-                    <p class="product-price">${product.price} </p>
-                    <p class="product-price">${product.price * 0.75}</p>
+                    <p class="product-price">${product.price} kr</p>
+                    <p class="product-price">${product.price * 0.75} kr</p>
                 </div>
                 <div class="off-info">
                     <h2 class="sm-title">25% rabatt</h2>
