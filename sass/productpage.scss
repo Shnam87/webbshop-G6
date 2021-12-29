@@ -50,6 +50,13 @@ body {
 
 /* Product section */
 
+.product-items {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+}
+
 .products {
   background-color: $mainColor-linen;
   padding: 3.2rem 0;
@@ -60,6 +67,7 @@ body {
   position: relative;
   display: none;
   width: 300px;
+  
 }
 .products-content {
   background: $mainColorBackground;
@@ -121,15 +129,14 @@ body {
 }
 .btn-load{
   justify-content: center;
-  padding: 0.8rem 0;
-  width: 8%;
-  margin-left: 45vw;
+  padding: 0.8rem;
   display: inline-block;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
   transition: all 0.6s ease;
   margin-top: 3px;
+  margin-left: 45vw;
 }
 .btn-wish:hover {
   color: #fff;
@@ -187,6 +194,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     position: relative;
+    
   }
 
   .product {
@@ -194,6 +202,7 @@ body {
     position: relative;
     display: none;
     width: 300px;
+    justify-self: center;
   }
 
 

@@ -1,4 +1,5 @@
 
+
 var varukorgProdukter = JSON.parse (localStorage.getItem("myCart")) || [];
 let addToCartBtn = document.querySelectorAll(".btn-cart");
 

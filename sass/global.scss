@@ -238,27 +238,24 @@
     position: absolute;
     width: 130px;
     height: 110px;
-    margin-top: 25%;
+    top: 20px;
     left: 22px;
     color: white;
-    background-color: rgba(67, 68, 67, 0.562);
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
 }
 .card-text h4 {
-    position: relative;
-    left: 15px;
-    top: 10%;
     font-size: 25px;
-    width: 100px;
     text-align: center;
+    background-color: rgba(67, 68, 67, 0.562);
+    padding: 10px;
 } 
 
 .card-text p{
-    position: relative;
     color: white;
     font-size: 15px;
     padding: 10px;
-    width: 110px;
-    margin-top: -137px;
     background-color: rgba(67, 68, 67, 0.562);
 }
 
