@@ -1,6 +1,10 @@
+// addEventListener som triggar "checkLogin" funktionen
 document.querySelector("#login-form-submit").addEventListener("click", checkLogin);
+
+// addEventListener som triggar "openModal" funktionen
 document.querySelector("#login").addEventListener("click", openModal);
 
+// Funktionen som verifierar inloggningen
 function checkLogin(e) {
     e.preventDefault();
 
@@ -15,6 +19,7 @@ function checkLogin(e) {
     }
 }
 
+// Funktionen som öppnar "myModal"
 function openModal(e) {
    // e.preventDefault();
     

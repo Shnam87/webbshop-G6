@@ -1,9 +1,11 @@
+// Några globala variabler
 let id = 01;
 const productString= localStorage.getItem("productLista");
 const products = JSON.parse(productString)
 
 const products_Element = document.querySelector(".product-items");
 
+// Funktionen som skapar element med produktinformation på produkt sidan
 function displayInfo() {
     products.forEach( (product) => {
         products_Element.innerHTML += `
