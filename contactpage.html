@@ -10,12 +10,9 @@
     <script src="./javascript/varukorg.js" defer></script>
     <script src="./javascript/varukorgItem.js" defer></script>
     <script src="./javascript/wishlist.js" defer></script>
+    <script src="https://kit.fontawesome.com/ad2a113bb4.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Quicksand:wght@300;500;600&display=swap" rel="stylesheet">
-    <script
-      src="https://kit.fontawesome.com/ad2a113bb4.js"
-      crossorigin="anonymous" defer>
-    </script>
 </head>
 <body>
     <header>
@@ -65,9 +62,9 @@
                 <div class="formContainer">
                     <h2 id= "contactForm-h2" class="contact-h2">KONTAKTFORMULÄR</h2>
                     <form action="https://formspree.io/f/meqnqlzp" method="POST">
-                        <label for="name">Namn:</label>
+                        <label for="nameInputField">Namn:</label>
                         <input class="input" id="nameInputField" type="text" name="Namn" placeholder="Namn..." required>
-                        <label for="Ämne">Välj ämne:</label>
+                        <label for="topicField">Välj ämne:</label>
                         <select class="input" id="topicField" name="Ämne">
                             <option value="choose">Välj</option>
                             <option value="Retur">Retur</option>
@@ -75,13 +72,12 @@
                             <option value="Reklamation">Reklamation</option>
                             <option value="Övrigt">Övrigt</option>
                         </select>
-                        <label for="email">Email:</label>
+                        <label for="emailInputField">Email:</label>
                         <input class="input" id="emailInputField" type="email" name="Email" placeholder="email@exempel.com" required>
-                        <label for="meddelande">Meddelande:</label>
-                        <textarea class="input textarea" id="massageInputfield" type="text" name="Meddelande" placeholder="text..." cols="30"
+                        <label for="massageInputfield">Meddelande:</label>
+                        <textarea class="input textarea" id="massageInputfield" name="Meddelande" placeholder="text..." cols="30"
                         rows="10" required></textarea>
                         <input class="inputSubmit" type="submit" value="Skicka">
-                        <p class="submitted"></p>
                     </form>
                 </div>
                 <div class="contactContainer">
@@ -113,9 +109,8 @@
     <aside id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <h2 class="favorite-h2">Favoriter</h2>
-    
         <ul class="favorite-item-list">
-            <!--------Lista med proudukter--------->
+            <!--List of products from JavaScript-->
         </ul>  
     </aside>
     <footer class="footer">
