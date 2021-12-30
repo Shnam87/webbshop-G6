@@ -1,11 +1,11 @@
 
 const cartItemString= localStorage.getItem("myCart");
-//console.log(cartItemString);
 const cartItems = JSON.parse(cartItemString) || [];
-const cartItems_Element = document.querySelector(".cart-items");
+const cartItems_Element = document.querySelector(".cart-items"); 
 
+//funktion för att det som finns i localStorage ska visas på sidan
 function displayCartItems() {
-    //cartItems_Element.innerHTML = "";
+  
     cartItems.forEach(item => {
         cartItems_Element.innerHTML += `
         <hr class="avskiljare">
@@ -22,25 +22,13 @@ function displayCartItems() {
         `;
     });
 
-
 }
 
-/*
-function removeProduct() {
-    var removeName = document.querySelector(".item-name");
-    var removePrice = document.querySelector(".item-price");
-    removeName.remove();
-    removePrice.remove();
-    window.localStorage.removeItem("myCart");
-  }
-
-   <button onclick="removeProduct()">Ta bort produkt</button>
-*/
   var totalSumma = 0;
 
-
+  // Räknar ihop totalsumman av produkterna
   function totalCost() {
-    //cartItems_Element.innerHTML = "";
+    
     cartItems.forEach(item => {
         totalSumma = totalSumma += item.price * 0.75
      
@@ -51,7 +39,6 @@ console.log(totalSumma)
     <hr class="avskiljare">
     <p class="totalSumma">Pris för produkter ${totalSumma} kr</p>
     `
-
 }
 
 
